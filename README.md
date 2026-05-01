@@ -7,6 +7,31 @@
 [![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104-green.svg)](https://fastapi.tiangolo.com/)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
+[![MiMo](https://img.shields.io/badge/MiMo-小米大模型-FF6B00.svg)](https://mimo.com/)
+
+---
+
+## 🤖 接入小米 MiMo 大模型
+
+本框架已适配 **小米 MiMo 大模型**，支持一键接入、多轮 Agent 调用、工具编排
+
+| 特性 | 说明 |
+|------|------|
+| 🔧 **一键接入** | 配置API Key即可使用 |
+| 🔄 **多轮对话** | 支持10+轮上下文记忆 |
+| 🛠️ **工具编排** | 自动调用查询/物流/优惠券等工具 |
+| 📊 **意图识别** | BERT深度学习，精准识别20+意图 |
+| 💬 **智能回复** | DeepSeek+MiMo双模型支持 |
+
+**快速开始**：
+```bash
+cd mimo-demo
+python mimo_demo.py
+```
+
+**MiMo适配器**：[mimo-demo/mimo_adapter.py](mimo-demo/mimo_adapter.py)
+
+---
 
 ### 核心指标
 
