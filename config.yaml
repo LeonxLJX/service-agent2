@@ -1,0 +1,40 @@
+app:
+  name: "ecommerce-customer-service-agent"
+  version: "1.0.0"
+  debug: false
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+
+llm:
+  provider: "openai"
+  api_key: "${LLM_API_KEY}"
+  model: "gpt-4"
+  temperature: 0.7
+  max_tokens: 1000
+  api_base: "https://api.openai.com/v1"
+
+mimo:
+  app_id: "${MIMO_APP_ID}"
+  app_key: "${MIMO_APP_KEY}"
+  webhook_secret: "${MIMO_WEBHOOK_SECRET}"
+  api_base: "https://api.mimo.com/v1"
+
+database:
+  type: "sqlite"
+  path: "./data/ecommerce.db"
+
+vector_store:
+  type: "faiss"
+  dimension: 1536
+
+knowledge_base:
+  default_kb_id: "default"
+  retrieval_top_k: 5
+  similarity_threshold: 0.7
+
+agent:
+  intent_confidence_threshold: 0.6
+  max_history_turns: 10
+  human_intervention_threshold: 0.3

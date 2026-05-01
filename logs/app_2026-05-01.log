@@ -1,0 +1,794 @@
+2026-05-01 15:36:06.170 | INFO     | app.main:lifespan:33 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 15:36:06.174 | INFO     | app.main:lifespan:34 - Debug mode: False
+2026-05-01 15:45:49.344 | INFO     | app.main:lifespan:33 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 15:45:49.348 | INFO     | app.main:lifespan:34 - Debug mode: False
+2026-05-01 15:45:49.352 | INFO     | app.main:lifespan:42 - Shutting down application
+2026-05-01 15:46:20.630 | INFO     | app.main:lifespan:33 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 15:46:20.633 | INFO     | app.main:lifespan:34 - Debug mode: False
+2026-05-01 15:57:51.303 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 15:57:51.305 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 15:57:51.310 | INFO     | app.main:lifespan:47 - Shutting down application
+2026-05-01 15:58:27.600 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 15:58:27.603 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:02:48.127 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:02:48.130 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:03:19.088 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:03:19.092 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:03:25.785 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:03:25.788 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:04:28.415 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:04:28.418 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:05:26.421 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:05:26.423 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:05:27.421 | ERROR    | app.services.llm_service:generate:38 - LLM generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-test-*****************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-01 17:11:33.698 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:11:33.704 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:11:51.507 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:11:51.510 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:12:11.801 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:12:11.805 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:12:37.536 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:12:37.540 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:13:19.848 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:13:19.851 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:13:40.856 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:13:40.859 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:13:58.751 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:13:58.754 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:15:00.121 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:15:00.125 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:15:16.950 | INFO     | app.main:chat:100 - 收到消息: ??
+2026-05-01 17:15:16.953 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:15:16.956 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:15:16.959 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 17:15:18.267 | INFO     | app.main:chat:121 - 最终回复: 您好！我是小e，请问有什么可以帮助您的吗？请告诉我您的问题或需求，我会尽力为您解答。如果遇到复杂问题，也可以为您转接人工客服哦！😊
+2026-05-01 17:15:51.848 | INFO     | app.main:chat:100 - 收到消息: 你好
+2026-05-01 17:15:51.851 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:15:51.854 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:15:51.859 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'greeting', 'sub_intent': 'greeting', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['推荐热门商品', '查看最新活动'], 'platform': 'taobao', 'processing_time': 0.003035306930541992}
+2026-05-01 17:15:52.988 | INFO     | app.main:chat:121 - 最终回复: 你好！我是小e，很高兴为你服务😊 有什么购物问题需要帮忙的吗？比如商品咨询、订单查询或者售后问题，都可以问我哦！
+2026-05-01 17:15:53.003 | INFO     | app.main:chat:100 - 收到消息: 发货时间是几点？
+2026-05-01 17:15:53.006 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:15:53.010 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:15:53.013 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'delivery_time', 'sub_intent': 'delivery_time', 'confidence': 0.8, 'entities': {'platform': 'taobao'}, 'suggestions': ['继续咨询'], 'platform': 'taobao', 'processing_time': 0.0014395713806152344}
+2026-05-01 17:15:54.150 | INFO     | app.main:chat:121 - 最终回复: 亲，通常我们的发货时间是每天下午5点前下单当天发货，5点后次日发货。具体时间可能因商品和库存有所不同，您可以提供订单号我帮您查询一下哦~😊
+2026-05-01 17:15:54.163 | INFO     | app.main:chat:100 - 收到消息: 这件衣服多少钱？
+2026-05-01 17:15:54.166 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:15:54.168 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:15:54.170 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'product_inquiry', 'sub_intent': 'product_info', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看商品详情', '查看库存', '尺码推荐'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 17:15:55.119 | INFO     | app.main:chat:121 - 最终回复: 亲爱的顾客，您好！请问您指的是哪一件衣服呢？能否提供商品名称或链接？这样我才能帮您查询准确的价格哦！😊
+2026-05-01 17:17:32.496 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:17:32.498 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:17:43.980 | INFO     | app.main:chat:100 - 收到消息: ??
+2026-05-01 17:17:43.983 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:17:43.985 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:17:43.987 | INFO     | app.main:chat:106 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 17:17:43.988 | INFO     | app.main:chat:134 - 最终回复: 抱歉，我没有完全理解您的问题，能否重新描述一下？
+2026-05-01 17:21:10.345 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:21:10.348 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:21:32.649 | INFO     | app.main:chat:100 - 收到消息: 你好
+2026-05-01 17:21:32.651 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:21:32.652 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:21:32.673 | INFO     | app.services.data_service:_load_all_data:110 - Loaded 10 orders, 10 products, 6 logistics, 4 refunds, 10 users, 7 coupons
+2026-05-01 17:21:32.676 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'greeting', 'sub_intent': 'greeting', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['推荐热门商品', '查看最新活动'], 'platform': 'taobao', 'processing_time': 0.0010213851928710938}
+2026-05-01 17:21:32.677 | INFO     | app.main:chat:199 - 最终回复: 您好！我是智能客服，很高兴为您服务。我们支持订单查询、物流跟踪、商品咨询、售后服务等功能。请问有什么可以帮您？
+2026-05-01 17:21:32.686 | INFO     | app.main:chat:100 - 收到消息: 我想查一下DD20260501002这个订单
+2026-05-01 17:21:32.688 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:21:32.689 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:21:32.692 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501002', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 17:21:32.693 | INFO     | app.main:chat:199 - 最终回复: 订单 DD20260501002 状态：已发货，运输中。商品：男士纯棉T恤 白色 XL，数量：1件，总价：89.0元。
+2026-05-01 17:21:32.700 | INFO     | app.main:chat:100 - 收到消息: DD20260501005的物流信息是什么
+2026-05-01 17:21:32.703 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:21:32.705 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:21:32.707 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'logistics_query', 'sub_intent': 'logistics_query', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501005', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看物流详情', '催促发货'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 17:21:32.707 | INFO     | app.main:chat:199 - 最终回复: 订单 DD20260501005 物流信息：快递公司：圆通速递，运单号：YTO9876543210，当前状态：in_transit，位置：杭州中转站，预计送达：2026-05-04。
+2026-05-01 17:21:32.716 | INFO     | app.main:chat:100 - 收到消息: 连衣裙多少钱
+2026-05-01 17:21:32.719 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:21:32.720 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:21:32.722 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'price_query', 'sub_intent': 'price_query', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看最新价格', '查看优惠活动'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 17:21:32.723 | INFO     | app.main:chat:199 - 最终回复: 好的，请问您想查询哪款商品的价格呢？
+2026-05-01 17:21:32.732 | INFO     | app.main:chat:100 - 收到消息: T恤有货吗
+2026-05-01 17:21:32.733 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:21:32.736 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:21:32.737 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 17:21:32.738 | INFO     | app.main:chat:199 - 最终回复: 抱歉，我没有完全理解您的问题。您可以问我：订单查询、物流跟踪、商品价格、发货时间、退款进度等。
+2026-05-01 17:21:32.748 | INFO     | app.main:chat:100 - 收到消息: 你们发货时间是几点
+2026-05-01 17:21:32.750 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:21:32.751 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:21:32.753 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'delivery_time', 'sub_intent': 'delivery_time', 'confidence': 0.8, 'entities': {'platform': 'taobao'}, 'suggestions': ['继续咨询'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 17:21:32.753 | INFO     | app.main:chat:199 - 最终回复: 我们的发货时间是每天下午4点前下单当天发货，4点后次日发货。一般3-5天可以送达，偏远地区可能需要5-7天。
+2026-05-01 17:29:30.481 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:29:30.483 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:30:08.472 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:30:08.475 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:34:31.379 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:34:31.381 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:36:03.276 | INFO     | app.main:chat:100 - 收到消息: 时尚小鱼
+2026-05-01 17:36:03.279 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:36:03.281 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:36:03.300 | INFO     | app.services.data_service:_load_all_data:110 - Loaded 10 orders, 10 products, 6 logistics, 4 refunds, 10 users, 7 coupons
+2026-05-01 17:36:03.302 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 17:36:03.302 | INFO     | app.main:chat:199 - 最终回复: 抱歉，我没有完全理解您的问题。您可以问我：订单查询、物流跟踪、商品价格、发货时间、退款进度等。
+2026-05-01 17:36:56.346 | INFO     | app.main:chat:100 - 收到消息: 查一下DD20260501002订单
+2026-05-01 17:36:56.349 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:36:56.351 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:36:56.355 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501002', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.0010068416595458984}
+2026-05-01 17:36:56.357 | INFO     | app.main:chat:199 - 最终回复: 订单 DD20260501002 状态：已发货，运输中。商品：男士纯棉T恤 白色 XL，数量：1件，总价：89.0元。
+2026-05-01 17:36:59.335 | INFO     | app.main:chat:100 - 收到消息: DD20260501005的物流到哪了
+2026-05-01 17:36:59.339 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:36:59.342 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:36:59.345 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'logistics_query', 'sub_intent': 'logistics_query', 'confidence': 0.8, 'entities': {'order_id': 'DD20260501005', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看物流详情', '催促发货'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 17:36:59.346 | INFO     | app.main:chat:199 - 最终回复: 订单 DD20260501005 物流信息：快递公司：圆通速递，运单号：YTO9876543210，当前状态：in_transit，位置：杭州中转站，预计送达：2026-05-04。
+2026-05-01 17:37:02.463 | INFO     | app.main:chat:100 - 收到消息: 我想买一件T恤
+2026-05-01 17:37:02.467 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:37:02.469 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:37:02.472 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 17:37:02.473 | INFO     | app.main:chat:199 - 最终回复: 抱歉，我没有完全理解您的问题。您可以问我：订单查询、物流跟踪、商品价格、发货时间、退款进度等。
+2026-05-01 17:37:05.305 | INFO     | app.main:chat:100 - 收到消息: 你们的退货政策是什么
+2026-05-01 17:37:05.308 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:37:05.311 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:37:05.314 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'return_request', 'sub_intent': 'return_request', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['申请退货', '查看退货政策'], 'platform': 'taobao', 'processing_time': 0.0009930133819580078}
+2026-05-01 17:37:05.315 | INFO     | app.main:chat:199 - 最终回复: 好的，我来帮您处理退货申请。请问是什么原因要退货呢？可选原因：尺码不合适、颜色不喜欢、质量问题、发错货、与描述不符等。
+2026-05-01 17:37:07.296 | INFO     | app.main:chat:100 - 收到消息: 你们发什么快递
+2026-05-01 17:37:07.299 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:37:07.301 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:37:07.305 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'logistics_query', 'sub_intent': 'logistics_query', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看物流详情', '催促发货'], 'platform': 'taobao', 'processing_time': 0.0009987354278564453}
+2026-05-01 17:37:07.305 | INFO     | app.main:chat:199 - 最终回复: 好的，请提供您的订单号，我帮您查询物流信息。
+2026-05-01 17:37:18.666 | INFO     | app.main:chat:100 - 收到消息: 你们发什么快递
+2026-05-01 17:37:18.670 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:37:18.672 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:37:18.675 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'logistics_query', 'sub_intent': 'logistics_query', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看物流详情', '催促发货'], 'platform': 'taobao', 'processing_time': 0.0009987354278564453}
+2026-05-01 17:37:18.676 | INFO     | app.main:chat:199 - 最终回复: 好的，请提供您的订单号，我帮您查询物流信息。
+2026-05-01 17:37:22.641 | INFO     | app.main:chat:100 - 收到消息: 查一下DD20260501002订单
+2026-05-01 17:37:22.644 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:37:22.645 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:37:22.649 | INFO     | app.main:chat:107 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501002', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.0010068416595458984}
+2026-05-01 17:37:22.650 | INFO     | app.main:chat:199 - 最终回复: 订单 DD20260501002 状态：已发货，运输中。商品：男士纯棉T恤 白色 XL，数量：1件，总价：89.0元。
+2026-05-01 17:37:39.341 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:37:39.344 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:37:50.365 | INFO     | app.main:chat:100 - 收到消息: ???DD20260501002??
+2026-05-01 17:37:50.367 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:37:50.368 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:37:50.388 | INFO     | app.services.data_service:_load_all_data:110 - Loaded 10 orders, 10 products, 6 logistics, 4 refunds, 10 users, 7 coupons
+2026-05-01 17:37:50.389 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 17:38:28.460 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:38:28.464 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:38:38.286 | INFO     | app.main:chat:100 - 收到消息: ?????T?
+2026-05-01 17:38:38.288 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:38:38.290 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:38:38.306 | INFO     | app.services.data_service:_load_all_data:110 - Loaded 10 orders, 10 products, 6 logistics, 4 refunds, 10 users, 7 coupons
+2026-05-01 17:38:38.307 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 17:39:15.676 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:39:15.680 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:39:25.836 | INFO     | app.main:chat:100 - 收到消息: ???DD20260501002??
+2026-05-01 17:39:25.840 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:39:25.844 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:39:25.864 | INFO     | app.services.data_service:_load_all_data:110 - Loaded 10 orders, 10 products, 6 logistics, 4 refunds, 10 users, 7 coupons
+2026-05-01 17:39:25.865 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 17:39:25.865 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:39:27.044 | INFO     | app.main:chat:124 - 最终回复: 您好，我暂时无法识别您的问题。请问您是查询订单DD20260501002吗？如果是，请提供更多信息，或联系人工客服为您处理。
+2026-05-01 17:42:26.741 | INFO     | app.main:chat:100 - 收到消息: 你好
+2026-05-01 17:42:26.746 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:42:26.748 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:42:26.752 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'greeting', 'sub_intent': 'greeting', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['推荐热门商品', '查看最新活动'], 'platform': 'taobao', 'processing_time': 0.0010089874267578125}
+2026-05-01 17:42:26.753 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:43:58.004 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:43:58.007 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:44:09.290 | INFO     | app.main:chat:100 - 收到消息: 你好
+2026-05-01 17:44:09.292 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:44:09.294 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:44:09.309 | INFO     | app.services.data_service:_load_all_data:110 - Loaded 10 orders, 10 products, 6 logistics, 4 refunds, 10 users, 7 coupons
+2026-05-01 17:44:09.311 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'greeting', 'sub_intent': 'greeting', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['推荐热门商品', '查看最新活动'], 'platform': 'taobao', 'processing_time': 0.001039266586303711}
+2026-05-01 17:44:09.312 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:44:10.046 | INFO     | app.main:chat:124 - 最终回复: 你好！我是小e，很高兴为您服务！请问有什么可以帮您的吗？
+2026-05-01 17:45:56.026 | INFO     | app.main:chat:100 - 收到消息: hi
+2026-05-01 17:45:56.030 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:45:56.032 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:45:56.034 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'greeting', 'sub_intent': 'greeting', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['推荐热门商品', '查看最新活动'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 17:45:56.036 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:45:56.632 | INFO     | app.main:chat:124 - 最终回复: 您好！我是小e，很高兴为您服务！请问有什么可以帮助您的吗？😊
+2026-05-01 17:46:28.770 | INFO     | app.main:chat:100 - 收到消息: 我叫品质生活
+2026-05-01 17:46:28.773 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:46:28.775 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:46:28.778 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 17:46:28.779 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:46:29.833 | INFO     | app.main:chat:124 - 最终回复: 您好，我是小e！请问有什么可以帮您的吗？您提到的"品质生活"是指什么方面呢？比如商品、服务还是其他需求？请详细说说，我会尽力为您解答。
+2026-05-01 17:46:45.132 | INFO     | app.main:chat:100 - 收到消息: 看下我的订单
+2026-05-01 17:46:45.135 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:46:45.137 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:46:45.141 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 17:46:45.142 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:46:46.026 | INFO     | app.main:chat:124 - 最终回复: 亲，您好！我是小e~请问您能提供一下订单号吗？这样我可以帮您查询订单状态哦😊
+2026-05-01 17:47:14.814 | INFO     | app.main:chat:100 - 收到消息: DD20260501001
+2026-05-01 17:47:14.817 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:47:14.820 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:47:14.822 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 17:47:14.824 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:47:15.803 | INFO     | app.main:chat:124 - 最终回复: 您好！您提供的"DD20260501001"看起来像是一个订单号。请问您是查询订单状态，还是需要其他帮助？如果是订单问题，请提供更多信息，我会尽力为您解答！
+2026-05-01 17:47:20.462 | INFO     | app.main:chat:100 - 收到消息: 查一下DD20260501002订单
+2026-05-01 17:47:20.466 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:47:20.468 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:47:20.471 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501002', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 17:47:20.472 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:47:21.384 | INFO     | app.main:chat:124 - 最终回复: 抱歉，我暂时无法查询到订单DD20260501002的详细信息。建议您联系人工客服，提供订单号后获取准确的物流和订单状态。
+2026-05-01 17:48:00.506 | INFO     | app.main:chat:100 - 收到消息: DD20260501001
+2026-05-01 17:48:00.510 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:48:00.512 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:48:00.516 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 17:48:00.517 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:48:01.501 | INFO     | app.main:chat:124 - 最终回复: 亲，您发的“DD20260501001”看起来像是一个订单号呢。请问您是想查询这个订单的物流信息或处理相关问题吗？小e可以帮您查查哦～
+2026-05-01 17:48:13.793 | INFO     | app.main:chat:100 - 收到消息: 想查询这个订单的物流信息
+2026-05-01 17:48:13.795 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:48:13.797 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:48:13.800 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 17:48:13.802 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:48:14.786 | INFO     | app.main:chat:124 - 最终回复: 您好！我是小e。请问您能提供一下订单号吗？这样我可以帮您查询淘宝订单的物流信息。
+2026-05-01 17:49:37.660 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:49:37.662 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:49:50.047 | INFO     | app.main:chat:100 - 收到消息: 查订单DD20260501001
+2026-05-01 17:49:50.049 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:49:50.051 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:49:50.067 | INFO     | app.services.data_service:_load_all_data:110 - Loaded 10 orders, 10 products, 6 logistics, 4 refunds, 10 users, 7 coupons
+2026-05-01 17:49:50.069 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501001', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.002046346664428711}
+2026-05-01 17:49:50.070 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:49:50.829 | INFO     | app.main:chat:163 - 最终回复: 您好，我暂时无法查到订单DD20260501001的详细信息，建议您联系人工客服获取帮助。
+2026-05-01 17:50:10.094 | INFO     | app.main:chat:100 - 收到消息: 查订单DD20260501001
+2026-05-01 17:50:10.096 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:50:10.098 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:50:10.099 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501001', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.002046346664428711}
+2026-05-01 17:50:10.101 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:50:11.239 | INFO     | app.main:chat:163 - 最终回复: 您好！我是小e，正在查询订单DD20260501001的状态。目前系统中未找到该订单信息，建议您核对一下订单号是否正确。如需进一步帮助，可联系人工客服，谢谢！
+2026-05-01 17:50:41.541 | INFO     | app.main:chat:100 - 收到消息: 查订单DD20260501001
+2026-05-01 17:50:41.542 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:50:41.544 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:50:41.547 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501001', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.002046346664428711}
+2026-05-01 17:50:41.548 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:50:42.490 | INFO     | app.main:chat:163 - 最终回复: 您好！我暂时无法查到订单DD20260501001的详细信息。建议您联系人工客服，提供订单号后为您查询具体状态。感谢您的理解！
+2026-05-01 17:51:04.904 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:51:04.905 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:51:17.594 | INFO     | app.main:chat:100 - 收到消息: 查订单DD20260501001
+2026-05-01 17:51:17.597 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:51:17.599 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:51:17.618 | INFO     | app.services.data_service:_load_all_data:110 - Loaded 10 orders, 10 products, 6 logistics, 4 refunds, 10 users, 7 coupons
+2026-05-01 17:51:17.620 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501001', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.0025937557220458984}
+2026-05-01 17:51:17.621 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:51:17.622 | INFO     | app.main:chat:125 - 查询到订单: Order(order_id='DD20260501001', user_id='U001', product_id='P001', product_name='夏季新款碎花连衣裙', quantity=2, unit_price=129.0, total_amount=258.0, status='paid', platform='taobao', created_at='2026-05-01 10:30:00', shipping_address='北京市朝阳区建国路88号', receiver_name='张三', receiver_phone='13800138001')
+2026-05-01 17:51:18.925 | INFO     | app.main:chat:163 - 最终回复: 您好！您的订单DD20260501001（夏季新款碎花连衣裙×2，共¥258.00）已支付成功，收件人张三，寄往北京市朝阳区建国路88号，我们会尽快安排发货哦~
+2026-05-01 17:51:38.403 | INFO     | app.main:chat:100 - 收到消息: 有什么优惠券吗
+2026-05-01 17:51:38.407 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:51:38.408 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:51:38.410 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'price_query', 'sub_intent': 'price_query', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看最新价格', '查看优惠活动'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 17:51:38.411 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:52:17.172 | INFO     | app.main:chat:100 - 收到消息: 有什么优惠券吗
+2026-05-01 17:52:17.174 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:52:17.176 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:52:17.179 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'price_query', 'sub_intent': 'price_query', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看最新价格', '查看优惠活动'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 17:52:17.179 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:52:40.953 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:52:40.956 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:52:53.240 | INFO     | app.main:chat:100 - 收到消息: 有什么优惠券吗
+2026-05-01 17:52:53.244 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:52:53.245 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:52:53.259 | INFO     | app.services.data_service:_load_all_data:110 - Loaded 10 orders, 10 products, 6 logistics, 4 refunds, 10 users, 7 coupons
+2026-05-01 17:52:53.262 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'price_query', 'sub_intent': 'price_query', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看最新价格', '查看优惠活动'], 'platform': 'taobao', 'processing_time': 0.0025343894958496094}
+2026-05-01 17:52:53.262 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:53:27.654 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 17:53:27.657 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 17:53:40.694 | INFO     | app.main:chat:100 - 收到消息: 有什么优惠券吗
+2026-05-01 17:53:40.698 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 17:53:40.699 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 17:53:40.715 | INFO     | app.services.data_service:_load_all_data:110 - Loaded 10 orders, 10 products, 6 logistics, 4 refunds, 10 users, 7 coupons
+2026-05-01 17:53:40.718 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'price_query', 'sub_intent': 'price_query', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看最新价格', '查看优惠活动'], 'platform': 'taobao', 'processing_time': 0.0021698474884033203}
+2026-05-01 17:53:40.718 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 17:53:40.719 | INFO     | app.main:chat:134 - 查询到优惠券: [Coupon(coupon_id='COUP001', coupon_name='新人专享券', type='cash', discount_amount=20.0, min_order_amount=100.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=450, total_count=500), Coupon(coupon_id='COUP002', coupon_name='满100减20', type='cash', discount_amount=20.0, min_order_amount=100.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-15', status='active', remaining_count=300, total_count=500), Coupon(coupon_id='COUP003', coupon_name='夏装专场8折', type='percentage', discount_amount=0.2, min_order_amount=200.0, applicable_products='P001;P002;P003', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=200, total_count=300), Coupon(coupon_id='COUP004', coupon_name='限时抢购券', type='cash', discount_amount=50.0, min_order_amount=300.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-07', status='active', remaining_count=80, total_count=100), Coupon(coupon_id='COUP005', coupon_name='VIP专属85折', type='percentage', discount_amount=0.15, min_order_amount=0.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=50, total_count=100), Coupon(coupon_id='COUP006', coupon_name='母婴专场券', type='cash', discount_amount=30.0, min_order_amount=150.0, applicable_products='P006', start_date='2026-05-01', end_date='2026-06-30', status='active', remaining_count=400, total_count=500), Coupon(coupon_id='COUP007', coupon_name='鞋类专区8折', type='percentage', discount_amount=0.2, min_order_amount=250.0, applicable_products='P003;P007', start_date='2026-05-01', end_date='2026-05-20', status='active', remaining_count=150, total_count=200)]
+2026-05-01 17:53:42.334 | INFO     | app.main:chat:163 - 最终回复: 亲，目前我们有多款优惠券哦！新人专享满100减20、满100减20、夏装8折、限时抢购满300减50、VIP85折、母婴满150减30、鞋类8折等，有效期到5-6月，您看哪个适合？
+2026-05-01 18:09:10.837 | INFO     | app.main:chat:100 - 收到消息: 想查询这个订单的物流信息DD20260501001
+2026-05-01 18:09:10.840 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:09:10.842 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:09:10.845 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501001', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:09:10.846 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:09:10.847 | INFO     | app.main:chat:125 - 查询到订单: Order(order_id='DD20260501001', user_id='U001', product_id='P001', product_name='夏季新款碎花连衣裙', quantity=2, unit_price=129.0, total_amount=258.0, status='paid', platform='taobao', created_at='2026-05-01 10:30:00', shipping_address='北京市朝阳区建国路88号', receiver_name='张三', receiver_phone='13800138001')
+2026-05-01 18:09:12.023 | INFO     | app.main:chat:163 - 最终回复: 您好！您的订单DD20260501001已支付成功，商品是夏季新款碎花连衣裙，共2件，金额258元。目前物流信息暂未更新，建议稍后再查或联系快递公司了解详情。如有其他问题，随时找我哦！
+2026-05-01 18:09:23.492 | INFO     | app.main:chat:100 - 收到消息: 有什么优惠
+2026-05-01 18:09:23.495 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:09:23.498 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:09:23.502 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'price_query', 'sub_intent': 'price_query', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看最新价格', '查看优惠活动'], 'platform': 'taobao', 'processing_time': 0.0015075206756591797}
+2026-05-01 18:09:23.503 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:09:23.504 | INFO     | app.main:chat:134 - 查询到优惠券: [Coupon(coupon_id='COUP001', coupon_name='新人专享券', type='cash', discount_amount=20.0, min_order_amount=100.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=450, total_count=500), Coupon(coupon_id='COUP002', coupon_name='满100减20', type='cash', discount_amount=20.0, min_order_amount=100.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-15', status='active', remaining_count=300, total_count=500), Coupon(coupon_id='COUP003', coupon_name='夏装专场8折', type='percentage', discount_amount=0.2, min_order_amount=200.0, applicable_products='P001;P002;P003', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=200, total_count=300), Coupon(coupon_id='COUP004', coupon_name='限时抢购券', type='cash', discount_amount=50.0, min_order_amount=300.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-07', status='active', remaining_count=80, total_count=100), Coupon(coupon_id='COUP005', coupon_name='VIP专属85折', type='percentage', discount_amount=0.15, min_order_amount=0.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=50, total_count=100), Coupon(coupon_id='COUP006', coupon_name='母婴专场券', type='cash', discount_amount=30.0, min_order_amount=150.0, applicable_products='P006', start_date='2026-05-01', end_date='2026-06-30', status='active', remaining_count=400, total_count=500), Coupon(coupon_id='COUP007', coupon_name='鞋类专区8折', type='percentage', discount_amount=0.2, min_order_amount=250.0, applicable_products='P003;P007', start_date='2026-05-01', end_date='2026-05-20', status='active', remaining_count=150, total_count=200)]
+2026-05-01 18:09:24.974 | INFO     | app.main:chat:163 - 最终回复: 亲，目前淘宝有以下优惠券：新人专享满100减20、满100减20、夏装8折（满200）、限时抢购满300减50、VIP专属85折、母婴满150减30、鞋类8折（满250）。您想用哪个？😊
+2026-05-01 18:11:42.559 | INFO     | app.main:chat:100 - 收到消息: 查一下DD20260501002订单
+2026-05-01 18:11:42.564 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:11:42.568 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:11:42.571 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501002', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:11:42.573 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:11:42.574 | INFO     | app.main:chat:125 - 查询到订单: Order(order_id='DD20260501002', user_id='U002', product_id='P002', product_name='男士纯棉T恤 白色 XL', quantity=1, unit_price=89.0, total_amount=89.0, status='shipped', platform='pinduoduo', created_at='2026-05-01 11:15:00', shipping_address='上海市浦东新区世纪大道100号', receiver_name='李四', receiver_phone='13800138002')
+2026-05-01 18:11:43.791 | INFO     | app.main:chat:163 - 最终回复: 您好！查询到订单DD20260501002（拼多多平台）已发货，商品为男士纯棉T恤白色XL，金额89元，收件人李四，地址上海市浦东新区世纪大道100号。如有其他问题请随时问我哦~
+2026-05-01 18:11:53.712 | INFO     | app.main:chat:100 - 收到消息: DD20260501003
+2026-05-01 18:11:53.716 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:11:53.719 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:11:53.722 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 18:11:53.724 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:11:54.943 | INFO     | app.main:chat:163 - 最终回复: 您好，我是客服小e。您输入的“DD20260501003”看起来像是一个订单号。请问您是想查询这个订单的物流信息、退换货进度，还是其他问题呢？
+2026-05-01 18:11:59.949 | INFO     | app.main:chat:100 - 收到消息: 我想买一件T恤
+2026-05-01 18:11:59.951 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:11:59.954 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:11:59.958 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 18:11:59.960 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:12:01.252 | INFO     | app.main:chat:163 - 最终回复: 您好！我是小e，很高兴为您服务！😊 请问您想要什么风格的T恤呢？比如颜色、尺码、款式（圆领/V领、纯色/印花）或者预算范围？告诉我您的要求，我帮您推荐合适的商品！
+2026-05-01 18:13:38.128 | INFO     | app.main:chat:100 - 收到消息: 我想买一件日常通勤穿的 T 恤，想要简约基础款，不想要太花哨的印花，颜色最好耐脏一点，预算不高，麻烦推荐性价比高的选项。
+2026-05-01 18:13:38.131 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:13:38.136 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:13:38.141 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'color_selection', 'sub_intent': 'color_selection', 'confidence': 0.8, 'entities': {'platform': 'taobao'}, 'suggestions': ['继续咨询'], 'platform': 'taobao', 'processing_time': 0.0010097026824951172}
+2026-05-01 18:13:38.144 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:13:39.474 | INFO     | app.main:chat:163 - 最终回复: 您好！很抱歉，目前我们知识库中没有符合您需求的商品推荐。建议您在淘宝搜索“简约基础款T恤 耐脏色”，按销量排序就能找到性价比高的款式。如需进一步帮助，欢迎联系人工客服。
+2026-05-01 18:13:51.041 | INFO     | app.main:chat:100 - 收到消息: 随便推荐
+2026-05-01 18:13:51.045 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:13:51.048 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:13:51.054 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 18:13:51.055 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:13:52.048 | INFO     | app.main:chat:163 - 最终回复: 亲，欢迎光临！请问您想看看什么类型的商品呢？比如电子产品、家居用品、服饰鞋包，或者有其他需求，告诉我就能帮您推荐哦~
+2026-05-01 18:14:33.372 | INFO     | app.main:chat:100 - 收到消息: 查一下DD20260501002订单
+2026-05-01 18:14:33.374 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:14:33.379 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:14:33.381 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501002', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:14:33.382 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:14:33.382 | INFO     | app.main:chat:125 - 查询到订单: Order(order_id='DD20260501002', user_id='U002', product_id='P002', product_name='男士纯棉T恤 白色 XL', quantity=1, unit_price=89.0, total_amount=89.0, status='shipped', platform='pinduoduo', created_at='2026-05-01 11:15:00', shipping_address='上海市浦东新区世纪大道100号', receiver_name='李四', receiver_phone='13800138002')
+2026-05-01 18:14:34.751 | INFO     | app.main:chat:163 - 最终回复: 您好！查询到订单DD20260501002（拼多多）的状态是“已发货”。商品为男士纯棉T恤白色XL，1件，金额89元，收件人李四，上海市浦东新区。请问还需要其他帮助吗？😊
+2026-05-01 18:14:37.202 | INFO     | app.main:chat:100 - 收到消息: DD20260501005的物流到哪了
+2026-05-01 18:14:37.205 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:14:37.209 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:14:37.212 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'logistics_query', 'sub_intent': 'logistics_query', 'confidence': 0.8, 'entities': {'order_id': 'DD20260501005', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看物流详情', '催促发货'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:14:37.213 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:14:45.207 | INFO     | app.main:chat:100 - 收到消息: 连衣裙多少钱
+2026-05-01 18:14:45.210 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:14:45.213 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:14:45.216 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'price_query', 'sub_intent': 'price_query', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看最新价格', '查看优惠活动'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:14:45.218 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:14:46.389 | INFO     | app.main:chat:163 - 最终回复: 亲，您好！我是小e。您想了解连衣裙的价格，但您没有指定具体款式或链接哦。能否提供更多信息，比如商品名称或链接？这样我才能帮您查价格呢！😊
+2026-05-01 18:14:50.033 | INFO     | app.main:chat:100 - 收到消息: DD20260501005的物流到哪了
+2026-05-01 18:14:50.036 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:14:50.039 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:14:50.044 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'logistics_query', 'sub_intent': 'logistics_query', 'confidence': 0.8, 'entities': {'order_id': 'DD20260501005', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看物流详情', '催促发货'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:14:50.045 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:15:03.218 | INFO     | app.main:chat:100 - 收到消息: 有哪些优惠券可以用
+2026-05-01 18:15:03.220 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:15:03.223 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:15:03.226 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'price_query', 'sub_intent': 'price_query', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看最新价格', '查看优惠活动'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:15:03.228 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:15:03.230 | INFO     | app.main:chat:134 - 查询到优惠券: [Coupon(coupon_id='COUP001', coupon_name='新人专享券', type='cash', discount_amount=20.0, min_order_amount=100.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=450, total_count=500), Coupon(coupon_id='COUP002', coupon_name='满100减20', type='cash', discount_amount=20.0, min_order_amount=100.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-15', status='active', remaining_count=300, total_count=500), Coupon(coupon_id='COUP003', coupon_name='夏装专场8折', type='percentage', discount_amount=0.2, min_order_amount=200.0, applicable_products='P001;P002;P003', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=200, total_count=300), Coupon(coupon_id='COUP004', coupon_name='限时抢购券', type='cash', discount_amount=50.0, min_order_amount=300.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-07', status='active', remaining_count=80, total_count=100), Coupon(coupon_id='COUP005', coupon_name='VIP专属85折', type='percentage', discount_amount=0.15, min_order_amount=0.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=50, total_count=100), Coupon(coupon_id='COUP006', coupon_name='母婴专场券', type='cash', discount_amount=30.0, min_order_amount=150.0, applicable_products='P006', start_date='2026-05-01', end_date='2026-06-30', status='active', remaining_count=400, total_count=500), Coupon(coupon_id='COUP007', coupon_name='鞋类专区8折', type='percentage', discount_amount=0.2, min_order_amount=250.0, applicable_products='P003;P007', start_date='2026-05-01', end_date='2026-05-20', status='active', remaining_count=150, total_count=200)]
+2026-05-01 18:15:04.859 | INFO     | app.main:chat:163 - 最终回复: 亲，目前淘宝可用的优惠券有这些哦~新人专享券满100减20、满100减20券、夏装8折券（满200）、限时抢购券满300减50、VIP专属85折、母婴专场券满150减30、鞋类8折券（满250）。有效期各有不同，亲可以看看有没有需要的~😊
+2026-05-01 18:15:12.510 | INFO     | app.main:chat:100 - 收到消息: 我想买一件T恤
+2026-05-01 18:15:12.513 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:15:12.516 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:15:12.521 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 18:15:12.523 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:15:13.572 | INFO     | app.main:chat:163 - 最终回复: 你好！欢迎来到小e服务。请问您想要什么风格的T恤呢？比如纯色、印花、宽松款还是修身款？我可以帮您推荐最合适的款式！😊
+2026-05-01 18:15:15.518 | INFO     | app.main:chat:100 - 收到消息: 帮我查一下DD20260501002的物流
+2026-05-01 18:15:15.521 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:15:15.523 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:15:15.524 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'logistics_query', 'sub_intent': 'logistics_query', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501002', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看物流详情', '催促发货'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:15:15.527 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:15:19.061 | INFO     | app.main:chat:100 - 收到消息: 纯色
+2026-05-01 18:15:19.065 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:15:19.067 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:15:19.073 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'color_selection', 'sub_intent': 'color_selection', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['继续咨询'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:15:19.075 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:15:20.156 | INFO     | app.main:chat:163 - 最终回复: 亲，您是想找纯色的商品对吗？😊 请问您具体想找什么类型的商品呢？比如衣服、鞋子还是其他？告诉小e您的需求，我来帮您推荐！
+2026-05-01 18:15:40.011 | INFO     | app.main:chat:100 - 收到消息: 纯色T恤
+2026-05-01 18:15:40.014 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:15:40.017 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:15:40.021 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'color_selection', 'sub_intent': 'color_selection', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['继续咨询'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:15:40.023 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:15:41.153 | INFO     | app.main:chat:163 - 最终回复: 亲，很高兴为您服务！关于纯色T恤，我们目前没有找到具体的商品信息。建议您在淘宝搜索框输入“纯色T恤”，可以查看各种款式哦。需要我帮您了解其他问题吗？
+2026-05-01 18:16:19.941 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 18:16:19.944 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 18:16:29.385 | INFO     | app.main:chat:100 - 收到消息: 帮我查一下DD20260501002的物流
+2026-05-01 18:16:29.389 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:16:29.391 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:16:29.411 | INFO     | app.services.data_service:_load_all_data:110 - Loaded 10 orders, 10 products, 6 logistics, 4 refunds, 10 users, 7 coupons
+2026-05-01 18:16:29.414 | INFO     | app.main:chat:108 - 识别结果: {'intent': 'logistics_query', 'sub_intent': 'logistics_query', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501002', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看物流详情', '催促发货'], 'platform': 'taobao', 'processing_time': 0.002001523971557617}
+2026-05-01 18:16:29.416 | INFO     | app.main:chat:115 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:16:29.416 | INFO     | app.main:chat:153 - 查询到物流: Logistics(tracking_no='SF1234567890', order_id='DD20260501002', company='顺丰速运', status='in_transit', current_location='上海分拨中心', estimated_delivery='2026-05-03', created_at='2026-05-01 12:00:00', updated_at='2026-05-02 08:00:00', traces=['2026-05-01 12:00:00 商家已发货', '2026-05-01 18:00:00 到达上海分拨中心', '2026-05-02 08:00:00 正在派送中'])
+2026-05-01 18:16:30.914 | INFO     | app.main:chat:164 - 最终回复: 亲，已经查到您订单DD20260501002的物流信息啦！包裹由顺丰速运（运单号SF1234567890）承运，目前正在上海分拨中心处理中，预计5月3日送达。请您耐心等待哦～
+2026-05-01 18:19:38.273 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 18:19:38.278 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 18:19:49.902 | INFO     | app.main:chat:101 - 收到消息: 帮我推荐一些商品
+2026-05-01 18:19:49.905 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:19:49.908 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:19:49.936 | INFO     | app.services.data_service:_load_all_data:126 - Loaded 10 orders, 10 products, 6 logistics, 4 refunds, 10 users, 7 coupons
+2026-05-01 18:19:49.939 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'product_inquiry', 'sub_intent': 'product_info', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看商品详情', '查看库存', '尺码推荐'], 'platform': 'taobao', 'processing_time': 0.0014979839324951172}
+2026-05-01 18:19:49.941 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:19:49.942 | INFO     | app.main:chat:194 - 查询到推荐: [Recommendation(product_id='P001', category='连衣裙', product_name='夏季新款碎花连衣裙', description='清新碎花设计，适合约会出游，面料轻薄透气', price=129.0, stock=200, popularity=950, tag1='碎花', tag2='夏季', tag3='约会', reason='热门爆款'), Recommendation(product_id='P003', category='鞋类', product_name='运动休闲鞋 黑色 42码', description='时尚休闲设计，缓震鞋底，舒适透气', price=299.0, stock=150, popularity=920, tag1='运动', tag2='休闲', tag3='时尚', reason='好评如潮'), Recommendation(product_id='P002', category='T恤', product_name='男士纯棉T恤 白色 XL', description='100%纯棉面料，柔软舒适，简约百搭款', price=89.0, stock=500, popularity=880, tag1='纯棉', tag2='百搭', tag3='透气', reason='店铺爆款'), Recommendation(product_id='P006', category='童装', product_name='婴儿纯棉连体衣 0-6月', description='A类纯棉，柔软亲肤，按扣设计方便穿脱', price=69.0, stock=400, popularity=850, tag1='婴儿', tag2='纯棉', tag3='安全', reason='妈妈首选'), Recommendation(product_id='P008', category='背包', product_name='学生双肩背包 蓝色', description='大容量收纳减压设计，适合学生族', price=129.0, stock=350, popularity=810, tag1='学生', tag2='大容量', tag3='减压', reason='开学必备')]
+2026-05-01 18:19:51.092 | INFO     | app.main:chat:223 - 最终回复: 亲，为您推荐几款热销商品哦！夏季碎花连衣裙129元、运动休闲鞋299元、纯棉T恤89元、婴儿连体衣69元、双肩背包129元，都是爆款，看看有没有喜欢的～
+2026-05-01 18:20:05.455 | INFO     | app.main:chat:101 - 收到消息: 查一下我刚才问的那个DD20260501001订单
+2026-05-01 18:20:05.458 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:20:05.460 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:20:05.463 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'product_inquiry', 'sub_intent': 'product_info', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501001', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看商品详情', '查看库存', '尺码推荐'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:20:05.463 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:20:06.437 | INFO     | app.main:chat:223 - 最终回复: 亲，抱歉没有查到DD20260501001这个订单的详细信息呢。建议您联系人工客服提供更多资料，我们会尽快帮您处理哦！
+2026-05-01 18:20:23.747 | INFO     | app.main:chat:101 - 收到消息: 推荐一些商品
+2026-05-01 18:20:23.750 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:20:23.752 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:20:23.754 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'product_inquiry', 'sub_intent': 'product_info', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看商品详情', '查看库存', '尺码推荐'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:20:23.755 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:20:23.756 | INFO     | app.main:chat:194 - 查询到推荐: [Recommendation(product_id='P001', category='连衣裙', product_name='夏季新款碎花连衣裙', description='清新碎花设计，适合约会出游，面料轻薄透气', price=129.0, stock=200, popularity=950, tag1='碎花', tag2='夏季', tag3='约会', reason='热门爆款'), Recommendation(product_id='P003', category='鞋类', product_name='运动休闲鞋 黑色 42码', description='时尚休闲设计，缓震鞋底，舒适透气', price=299.0, stock=150, popularity=920, tag1='运动', tag2='休闲', tag3='时尚', reason='好评如潮'), Recommendation(product_id='P002', category='T恤', product_name='男士纯棉T恤 白色 XL', description='100%纯棉面料，柔软舒适，简约百搭款', price=89.0, stock=500, popularity=880, tag1='纯棉', tag2='百搭', tag3='透气', reason='店铺爆款'), Recommendation(product_id='P006', category='童装', product_name='婴儿纯棉连体衣 0-6月', description='A类纯棉，柔软亲肤，按扣设计方便穿脱', price=69.0, stock=400, popularity=850, tag1='婴儿', tag2='纯棉', tag3='安全', reason='妈妈首选'), Recommendation(product_id='P008', category='背包', product_name='学生双肩背包 蓝色', description='大容量收纳减压设计，适合学生族', price=129.0, stock=350, popularity=810, tag1='学生', tag2='大容量', tag3='减压', reason='开学必备')]
+2026-05-01 18:20:24.973 | INFO     | app.main:chat:223 - 最终回复: 亲，小e为您精选了5款热销商品哦！有碎花连衣裙¥129、运动休闲鞋¥299、纯棉T恤¥89、婴儿连体衣¥69和学生背包¥129，都是好评爆款，您对哪款感兴趣呢？😊
+2026-05-01 18:20:35.246 | INFO     | app.main:chat:101 - 收到消息: 查一下DD20260501001的订单
+2026-05-01 18:20:35.248 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:20:35.250 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:20:35.252 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501001', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:20:35.253 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:20:35.254 | INFO     | app.main:chat:148 - 查询到订单: Order(order_id='DD20260501001', user_id='U001', product_id='P001', product_name='夏季新款碎花连衣裙', quantity=2, unit_price=129.0, total_amount=258.0, status='paid', platform='taobao', created_at='2026-05-01 10:30:00', shipping_address='北京市朝阳区建国路88号', receiver_name='张三', receiver_phone='13800138001')
+2026-05-01 18:20:36.574 | INFO     | app.main:chat:223 - 最终回复: 亲，查到您的订单DD20260501001啦！商品是夏季新款碎花连衣裙（2件，¥258），已支付成功，等待商家发货中～预计商家会尽快安排，请您耐心等待哦😊
+2026-05-01 18:21:09.808 | INFO     | app.main:chat:101 - 收到消息: 查一下DD20260501002订单
+2026-05-01 18:21:09.810 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:21:09.813 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:21:09.817 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501002', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.0009992122650146484}
+2026-05-01 18:21:09.818 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:21:09.819 | INFO     | app.main:chat:148 - 查询到订单: Order(order_id='DD20260501002', user_id='U002', product_id='P002', product_name='男士纯棉T恤 白色 XL', quantity=1, unit_price=89.0, total_amount=89.0, status='shipped', platform='pinduoduo', created_at='2026-05-01 11:15:00', shipping_address='上海市浦东新区世纪大道100号', receiver_name='李四', receiver_phone='13800138002')
+2026-05-01 18:21:10.783 | INFO     | app.main:chat:223 - 最终回复: 亲，查到您的订单DD20260501002啦！男士纯棉T恤白色XL，1件89元，已发货正在配送中，快递小哥正努力派送，请保持电话畅通哦～😊
+2026-05-01 18:21:12.049 | INFO     | app.main:chat:101 - 收到消息: DD20260501005的物流到哪了
+2026-05-01 18:21:12.052 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:21:12.056 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:21:12.059 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'logistics_query', 'sub_intent': 'logistics_query', 'confidence': 0.8, 'entities': {'order_id': 'DD20260501005', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看物流详情', '催促发货'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:21:12.061 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:21:12.062 | INFO     | app.main:chat:208 - 查询到物流: Logistics(tracking_no='YTO9876543210', order_id='DD20260501005', company='圆通速递', status='in_transit', current_location='杭州中转站', estimated_delivery='2026-05-04', created_at='2026-05-01 15:00:00', updated_at='2026-05-02 10:00:00', traces=['2026-05-01 15:00:00 商家已发货', '2026-05-02 06:00:00 到达杭州中转站', '2026-05-02 10:00:00 正在派送中'])
+2026-05-01 18:21:13.221 | INFO     | app.main:chat:223 - 最终回复: 亲，您的订单DD20260501005已通过圆通速递发出（运单号YTO9876543210），目前正在杭州中转站中转，预计2026年5月4日送达，请耐心等待哦～😊
+2026-05-01 18:21:14.824 | INFO     | app.main:chat:101 - 收到消息: 连衣裙多少钱
+2026-05-01 18:21:14.827 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:21:14.830 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:21:14.833 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'price_query', 'sub_intent': 'price_query', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看最新价格', '查看优惠活动'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:21:14.835 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:21:15.827 | INFO     | app.main:chat:223 - 最终回复: 亲，您问的是连衣裙的价格，但小e这边没有找到具体的商品信息呢。建议您提供商品链接或商品编号，小e帮您查询具体价格哦～😊
+2026-05-01 18:21:18.192 | INFO     | app.main:chat:101 - 收到消息: 这件衣服有货吗
+2026-05-01 18:21:18.196 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:21:18.199 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:21:18.204 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'product_inquiry', 'sub_intent': 'product_info', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看商品详情', '查看库存', '尺码推荐'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:21:18.205 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:21:19.073 | INFO     | app.main:chat:223 - 最终回复: 亲，您问的这件衣服库存情况需要具体商品信息哦～建议提供商品链接或编号，小e帮您查询是否有货。😊
+2026-05-01 18:21:21.736 | INFO     | app.main:chat:101 - 收到消息: 有哪些优惠券可以用
+2026-05-01 18:21:21.740 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:21:21.743 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:21:21.747 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'price_query', 'sub_intent': 'price_query', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看最新价格', '查看优惠活动'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:21:21.749 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:21:21.750 | INFO     | app.main:chat:163 - 查询到优惠券: [Coupon(coupon_id='COUP001', coupon_name='新人专享券', type='cash', discount_amount=20.0, min_order_amount=100.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=450, total_count=500), Coupon(coupon_id='COUP002', coupon_name='满100减20', type='cash', discount_amount=20.0, min_order_amount=100.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-15', status='active', remaining_count=300, total_count=500), Coupon(coupon_id='COUP003', coupon_name='夏装专场8折', type='percentage', discount_amount=0.2, min_order_amount=200.0, applicable_products='P001;P002;P003', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=200, total_count=300), Coupon(coupon_id='COUP004', coupon_name='限时抢购券', type='cash', discount_amount=50.0, min_order_amount=300.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-07', status='active', remaining_count=80, total_count=100), Coupon(coupon_id='COUP005', coupon_name='VIP专属85折', type='percentage', discount_amount=0.15, min_order_amount=0.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=50, total_count=100), Coupon(coupon_id='COUP006', coupon_name='母婴专场券', type='cash', discount_amount=30.0, min_order_amount=150.0, applicable_products='P006', start_date='2026-05-01', end_date='2026-06-30', status='active', remaining_count=400, total_count=500), Coupon(coupon_id='COUP007', coupon_name='鞋类专区8折', type='percentage', discount_amount=0.2, min_order_amount=250.0, applicable_products='P003;P007', start_date='2026-05-01', end_date='2026-05-20', status='active', remaining_count=150, total_count=200)]
+2026-05-01 18:21:22.902 | INFO     | app.main:chat:223 - 最终回复: 亲，目前淘宝可用的优惠券有：新人专享满100减20、夏装专场8折、限时抢购满300减50等。推荐夏装专场8折和限时抢购券，特别划算哦～😊
+2026-05-01 18:21:24.792 | INFO     | app.main:chat:101 - 收到消息: 有哪些优惠券可以用
+2026-05-01 18:21:24.794 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:21:24.797 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:21:24.802 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'price_query', 'sub_intent': 'price_query', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看最新价格', '查看优惠活动'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:21:24.803 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:21:24.804 | INFO     | app.main:chat:163 - 查询到优惠券: [Coupon(coupon_id='COUP001', coupon_name='新人专享券', type='cash', discount_amount=20.0, min_order_amount=100.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=450, total_count=500), Coupon(coupon_id='COUP002', coupon_name='满100减20', type='cash', discount_amount=20.0, min_order_amount=100.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-15', status='active', remaining_count=300, total_count=500), Coupon(coupon_id='COUP003', coupon_name='夏装专场8折', type='percentage', discount_amount=0.2, min_order_amount=200.0, applicable_products='P001;P002;P003', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=200, total_count=300), Coupon(coupon_id='COUP004', coupon_name='限时抢购券', type='cash', discount_amount=50.0, min_order_amount=300.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-07', status='active', remaining_count=80, total_count=100), Coupon(coupon_id='COUP005', coupon_name='VIP专属85折', type='percentage', discount_amount=0.15, min_order_amount=0.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=50, total_count=100), Coupon(coupon_id='COUP006', coupon_name='母婴专场券', type='cash', discount_amount=30.0, min_order_amount=150.0, applicable_products='P006', start_date='2026-05-01', end_date='2026-06-30', status='active', remaining_count=400, total_count=500), Coupon(coupon_id='COUP007', coupon_name='鞋类专区8折', type='percentage', discount_amount=0.2, min_order_amount=250.0, applicable_products='P003;P007', start_date='2026-05-01', end_date='2026-05-20', status='active', remaining_count=150, total_count=200)]
+2026-05-01 18:21:26.033 | INFO     | app.main:chat:223 - 最终回复: 亲，目前淘宝可用的优惠券有：新人专享满100减20、夏装专场8折、限时抢购满300减50等。推荐夏装专场8折和限时抢购券，特别划算哦～😊
+2026-05-01 18:21:26.039 | INFO     | app.main:chat:101 - 收到消息: 你们发什么快递
+2026-05-01 18:21:26.043 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:21:26.046 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:21:26.051 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'logistics_query', 'sub_intent': 'logistics_query', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看物流详情', '催促发货'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:21:26.054 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:21:27.210 | INFO     | app.main:chat:223 - 最终回复: 亲，淘宝平台一般默认发中通、圆通或韵达快递哦～具体以您下单时选择的快递为准。如果不确定，可以告诉我订单号，小e帮您查一下！😊
+2026-05-01 18:21:52.607 | INFO     | app.main:chat:101 - 收到消息: 推荐一件衣服
+2026-05-01 18:21:52.611 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:21:52.613 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:21:52.617 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 18:21:52.619 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:21:52.621 | INFO     | app.main:chat:194 - 查询到推荐: [Recommendation(product_id='P001', category='连衣裙', product_name='夏季新款碎花连衣裙', description='清新碎花设计，适合约会出游，面料轻薄透气', price=129.0, stock=200, popularity=950, tag1='碎花', tag2='夏季', tag3='约会', reason='热门爆款'), Recommendation(product_id='P003', category='鞋类', product_name='运动休闲鞋 黑色 42码', description='时尚休闲设计，缓震鞋底，舒适透气', price=299.0, stock=150, popularity=920, tag1='运动', tag2='休闲', tag3='时尚', reason='好评如潮'), Recommendation(product_id='P002', category='T恤', product_name='男士纯棉T恤 白色 XL', description='100%纯棉面料，柔软舒适，简约百搭款', price=89.0, stock=500, popularity=880, tag1='纯棉', tag2='百搭', tag3='透气', reason='店铺爆款'), Recommendation(product_id='P006', category='童装', product_name='婴儿纯棉连体衣 0-6月', description='A类纯棉，柔软亲肤，按扣设计方便穿脱', price=69.0, stock=400, popularity=850, tag1='婴儿', tag2='纯棉', tag3='安全', reason='妈妈首选'), Recommendation(product_id='P008', category='背包', product_name='学生双肩背包 蓝色', description='大容量收纳减压设计，适合学生族', price=129.0, stock=350, popularity=810, tag1='学生', tag2='大容量', tag3='减压', reason='开学必备')]
+2026-05-01 18:21:53.655 | INFO     | app.main:chat:223 - 最终回复: 亲，推荐这款夏季新款碎花连衣裙，只要129元！清新碎花设计，轻薄透气，特别适合约会出游哦～😊
+2026-05-01 18:22:05.194 | INFO     | app.main:chat:101 - 收到消息: 推荐一件衣服
+2026-05-01 18:22:05.198 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:22:05.202 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:22:05.205 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 18:22:05.208 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:22:05.209 | INFO     | app.main:chat:194 - 查询到推荐: [Recommendation(product_id='P001', category='连衣裙', product_name='夏季新款碎花连衣裙', description='清新碎花设计，适合约会出游，面料轻薄透气', price=129.0, stock=200, popularity=950, tag1='碎花', tag2='夏季', tag3='约会', reason='热门爆款'), Recommendation(product_id='P003', category='鞋类', product_name='运动休闲鞋 黑色 42码', description='时尚休闲设计，缓震鞋底，舒适透气', price=299.0, stock=150, popularity=920, tag1='运动', tag2='休闲', tag3='时尚', reason='好评如潮'), Recommendation(product_id='P002', category='T恤', product_name='男士纯棉T恤 白色 XL', description='100%纯棉面料，柔软舒适，简约百搭款', price=89.0, stock=500, popularity=880, tag1='纯棉', tag2='百搭', tag3='透气', reason='店铺爆款'), Recommendation(product_id='P006', category='童装', product_name='婴儿纯棉连体衣 0-6月', description='A类纯棉，柔软亲肤，按扣设计方便穿脱', price=69.0, stock=400, popularity=850, tag1='婴儿', tag2='纯棉', tag3='安全', reason='妈妈首选'), Recommendation(product_id='P008', category='背包', product_name='学生双肩背包 蓝色', description='大容量收纳减压设计，适合学生族', price=129.0, stock=350, popularity=810, tag1='学生', tag2='大容量', tag3='减压', reason='开学必备')]
+2026-05-01 18:22:06.119 | INFO     | app.main:chat:223 - 最终回复: 亲，推荐这款夏季新款碎花连衣裙，只要129元～清新碎花设计，轻薄透气，特别适合约会出游哦！😊
+2026-05-01 18:22:29.004 | INFO     | app.main:chat:101 - 收到消息: 你们的退货政策是什么
+2026-05-01 18:22:29.008 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:22:29.009 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:22:29.012 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'return_request', 'sub_intent': 'return_request', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['申请退货', '查看退货政策'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:22:29.013 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:22:30.072 | INFO     | app.main:chat:223 - 最终回复: 亲，淘宝平台支持7天无理由退货哦～商品需保持完好、不影响二次销售，运费由买家承担（质量问题除外）。具体可查看订单详情页的退换说明。😊
+2026-05-01 18:24:47.763 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 18:24:47.767 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 18:24:56.468 | INFO     | app.main:chat:101 - 收到消息: 查一下DD20260501001的订单
+2026-05-01 18:24:56.470 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:24:56.473 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:24:56.491 | INFO     | app.services.data_service:_load_all_data:126 - Loaded 10 orders, 10 products, 6 logistics, 4 refunds, 10 users, 7 coupons
+2026-05-01 18:24:56.495 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501001', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.0020008087158203125}
+2026-05-01 18:24:56.495 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:24:56.496 | INFO     | app.main:chat:204 - 查询到订单: Order(order_id='DD20260501001', user_id='U001', product_id='P001', product_name='夏季新款碎花连衣裙', quantity=2, unit_price=129.0, total_amount=258.0, status='paid', platform='taobao', created_at='2026-05-01 10:30:00', shipping_address='北京市朝阳区建国路88号', receiver_name='张三', receiver_phone='13800138001')
+2026-05-01 18:24:57.926 | INFO     | app.main:chat:354 - 最终回复: 亲，您的订单DD20260501001已支付成功，等待商家发货哦！商品是夏季碎花连衣裙2件共258元，收货人张三，地址北京朝阳区。预计24小时内发货，请耐心等待~
+2026-05-01 18:25:13.780 | INFO     | app.main:chat:101 - 收到消息: 有什么优惠券
+2026-05-01 18:25:13.783 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:25:13.784 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:25:13.787 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'price_query', 'sub_intent': 'price_query', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看最新价格', '查看优惠活动'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:25:13.788 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:25:13.790 | INFO     | app.main:chat:236 - 查询到优惠券: [Coupon(coupon_id='COUP001', coupon_name='新人专享券', type='cash', discount_amount=20.0, min_order_amount=100.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=450, total_count=500), Coupon(coupon_id='COUP002', coupon_name='满100减20', type='cash', discount_amount=20.0, min_order_amount=100.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-15', status='active', remaining_count=300, total_count=500), Coupon(coupon_id='COUP003', coupon_name='夏装专场8折', type='percentage', discount_amount=0.2, min_order_amount=200.0, applicable_products='P001;P002;P003', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=200, total_count=300), Coupon(coupon_id='COUP004', coupon_name='限时抢购券', type='cash', discount_amount=50.0, min_order_amount=300.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-07', status='active', remaining_count=80, total_count=100), Coupon(coupon_id='COUP005', coupon_name='VIP专属85折', type='percentage', discount_amount=0.15, min_order_amount=0.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=50, total_count=100), Coupon(coupon_id='COUP006', coupon_name='母婴专场券', type='cash', discount_amount=30.0, min_order_amount=150.0, applicable_products='P006', start_date='2026-05-01', end_date='2026-06-30', status='active', remaining_count=400, total_count=500), Coupon(coupon_id='COUP007', coupon_name='鞋类专区8折', type='percentage', discount_amount=0.2, min_order_amount=250.0, applicable_products='P003;P007', start_date='2026-05-01', end_date='2026-05-20', status='active', remaining_count=150, total_count=200)]
+2026-05-01 18:25:15.110 | INFO     | app.main:chat:354 - 最终回复: 亲，现在咱们淘宝店有这些优惠券哦！新人专享满100减20、满100减20、限时满300减50、母婴满150减30，还有夏装8折券等。数量有限，先到先得！😊
+2026-05-01 18:25:51.419 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 18:25:51.421 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 18:26:02.095 | INFO     | app.main:chat:101 - 收到消息: 查一下DD20260501001的订单
+2026-05-01 18:26:02.097 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:26:02.100 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:26:02.118 | INFO     | app.services.data_service:_load_all_data:126 - Loaded 10 orders, 10 products, 6 logistics, 4 refunds, 10 users, 7 coupons
+2026-05-01 18:26:02.121 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501001', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.0015535354614257812}
+2026-05-01 18:26:02.122 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:26:02.122 | INFO     | app.main:chat:204 - 查询到订单: Order(order_id='DD20260501001', user_id='U001', product_id='P001', product_name='夏季新款碎花连衣裙', quantity=2, unit_price=129.0, total_amount=258.0, status='paid', platform='taobao', created_at='2026-05-01 10:30:00', shipping_address='北京市朝阳区建国路88号', receiver_name='张三', receiver_phone='13800138001')
+2026-05-01 18:26:02.124 | INFO     | app.main:chat:357 - 最终回复: items=[] scores=[]
+═══════════════════════════════════════════
+                    📋 订单分析报告
+═══════════════════════════════════════════
+
+【基本信息】
+├ 订单编号: DD20260501001
+├ 商品名称: 夏季新款碎花连衣裙
+├ 购买数量: 2件
+├ 订单金额: ￥258.0
+├ 订单状态: 已支付，等待商家发货
+├ 购买平台: taobao
+├ 下单时间: 2026-05-01 10:30:00
+
+【收货信息】
+├ 收件人: 张三
+└ 收货地址: 北京市朝阳区建国路88号
+
+【同类商品推荐】
+├ 夏季新款碎花连衣裙 - ￥129.0
+│   热销950件，好评如潮
+【当前可用优惠】
+├ 新人专享券: 满100.0减20.0元
+├ 满100减20: 满100.0减20.0元
+├ 夏装专场8折: 满200.0减0.2元
+
+【小e智能建议】
+✅ 您的订单已支付成功，商家会在24小时内安排发货哦~
+💡 温馨提示：如有急需发货的商品，建议您联系商家说明情况，小e帮您催促~
+2026-05-01 18:26:22.625 | INFO     | app.main:chat:101 - 收到消息: 帮我推荐一些商品
+2026-05-01 18:26:22.628 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:26:22.629 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:26:22.633 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'product_inquiry', 'sub_intent': 'product_info', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看商品详情', '查看库存', '尺码推荐'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:26:22.634 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:26:22.635 | INFO     | app.main:chat:304 - 查询到推荐: [Recommendation(product_id='P001', category='连衣裙', product_name='夏季新款碎花连衣裙', description='清新碎花设计，适合约会出游，面料轻薄透气', price=129.0, stock=200, popularity=950, tag1='碎花', tag2='夏季', tag3='约会', reason='热门爆款'), Recommendation(product_id='P003', category='鞋类', product_name='运动休闲鞋 黑色 42码', description='时尚休闲设计，缓震鞋底，舒适透气', price=299.0, stock=150, popularity=920, tag1='运动', tag2='休闲', tag3='时尚', reason='好评如潮'), Recommendation(product_id='P002', category='T恤', product_name='男士纯棉T恤 白色 XL', description='100%纯棉面料，柔软舒适，简约百搭款', price=89.0, stock=500, popularity=880, tag1='纯棉', tag2='百搭', tag3='透气', reason='店铺爆款'), Recommendation(product_id='P006', category='童装', product_name='婴儿纯棉连体衣 0-6月', description='A类纯棉，柔软亲肤，按扣设计方便穿脱', price=69.0, stock=400, popularity=850, tag1='婴儿', tag2='纯棉', tag3='安全', reason='妈妈首选'), Recommendation(product_id='P008', category='背包', product_name='学生双肩背包 蓝色', description='大容量收纳减压设计，适合学生族', price=129.0, stock=350, popularity=810, tag1='学生', tag2='大容量', tag3='减压', reason='开学必备'), Recommendation(product_id='P004', category='牛仔裤', product_name='韩版宽松牛仔裤', description='韩风设计，宽松版型，面料柔软', price=159.0, stock=300, popularity=750, tag1='韩版', tag2='宽松', tag3='时尚', reason='网红同款')]
+2026-05-01 18:26:24.012 | INFO     | app.main:chat:357 - 最终回复: 亲，根据您的购物偏好，小e为您推荐：夏季碎花连衣裙￥129、运动休闲鞋￥299、男士纯棉T恤￥89等好物！🔥本周爆款连衣裙搭配运动鞋可享8折优惠哦~
+2026-05-01 18:26:52.085 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 18:26:52.087 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 18:27:01.150 | INFO     | app.main:chat:101 - 收到消息: 帮我推荐一些商品
+2026-05-01 18:27:01.154 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:27:01.156 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:27:01.175 | INFO     | app.services.data_service:_load_all_data:126 - Loaded 10 orders, 10 products, 6 logistics, 4 refunds, 10 users, 7 coupons
+2026-05-01 18:27:01.178 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'product_inquiry', 'sub_intent': 'product_info', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看商品详情', '查看库存', '尺码推荐'], 'platform': 'taobao', 'processing_time': 0.0025358200073242188}
+2026-05-01 18:27:01.179 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:27:01.180 | INFO     | app.main:chat:304 - 查询到推荐: [Recommendation(product_id='P001', category='连衣裙', product_name='夏季新款碎花连衣裙', description='清新碎花设计，适合约会出游，面料轻薄透气', price=129.0, stock=200, popularity=950, tag1='碎花', tag2='夏季', tag3='约会', reason='热门爆款'), Recommendation(product_id='P003', category='鞋类', product_name='运动休闲鞋 黑色 42码', description='时尚休闲设计，缓震鞋底，舒适透气', price=299.0, stock=150, popularity=920, tag1='运动', tag2='休闲', tag3='时尚', reason='好评如潮'), Recommendation(product_id='P002', category='T恤', product_name='男士纯棉T恤 白色 XL', description='100%纯棉面料，柔软舒适，简约百搭款', price=89.0, stock=500, popularity=880, tag1='纯棉', tag2='百搭', tag3='透气', reason='店铺爆款'), Recommendation(product_id='P006', category='童装', product_name='婴儿纯棉连体衣 0-6月', description='A类纯棉，柔软亲肤，按扣设计方便穿脱', price=69.0, stock=400, popularity=850, tag1='婴儿', tag2='纯棉', tag3='安全', reason='妈妈首选'), Recommendation(product_id='P008', category='背包', product_name='学生双肩背包 蓝色', description='大容量收纳减压设计，适合学生族', price=129.0, stock=350, popularity=810, tag1='学生', tag2='大容量', tag3='减压', reason='开学必备'), Recommendation(product_id='P004', category='牛仔裤', product_name='韩版宽松牛仔裤', description='韩风设计，宽松版型，面料柔软', price=159.0, stock=300, popularity=750, tag1='韩版', tag2='宽松', tag3='时尚', reason='网红同款')]
+2026-05-01 18:27:01.180 | INFO     | app.main:chat:357 - 最终回复: items=[] scores=[]
+═══════════════════════════════════════════
+              ⭐ 智能推荐报告
+═══════════════════════════════════════════
+
+小e根据您的购物偏好，为您精心挑选了以下商品：
+
+【连衣裙专区】
+├ 夏季新款碎花连衣裙 - ￥129.0
+【鞋类专区】
+├ 运动休闲鞋 黑色 42码 - ￥299.0
+【T恤专区】
+├ 男士纯棉T恤 白色 XL - ￥89.0
+【童装专区】
+├ 婴儿纯棉连体衣 0-6月 - ￥69.0
+【背包专区】
+├ 学生双肩背包 蓝色 - ￥129.0
+【牛仔裤专区】
+├ 韩版宽松牛仔裤 - ￥159.0
+
+【小e推荐亮点】
+🔥 本周爆款: 夏季新款碎花连衣裙
+💎 高性价比: 男士纯棉T恤 白色 XL (仅￥89.0)
+👑 品质之选: 运动休闲鞋 黑色 42码
+
+【搭配推荐】购买连衣裙+运动鞋，立享夏装8折优惠~
+═══════════════════════════════════════════
+2026-05-01 18:28:27.732 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 18:28:27.736 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 18:28:37.281 | INFO     | app.main:chat:101 - 收到消息: 夏天吃什么好
+2026-05-01 18:28:37.285 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:28:37.288 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:28:37.320 | INFO     | app.services.data_service:_load_all_data:126 - Loaded 10 orders, 10 products, 6 logistics, 4 refunds, 10 users, 7 coupons
+2026-05-01 18:28:37.323 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0010149478912353516}
+2026-05-01 18:28:37.324 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:28:38.743 | INFO     | app.main:chat:357 - 最终回复: 夏天建议多吃清淡解暑的食物，比如西瓜、黄瓜、绿豆汤、苦瓜等，帮助清热降火。同时多补充水分，少吃油腻辛辣。需要我推荐具体的消暑商品吗？
+2026-05-01 18:28:54.284 | INFO     | app.main:chat:101 - 收到消息: 怎么减肥最快
+2026-05-01 18:28:54.286 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:28:54.288 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:28:54.292 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 18:28:54.295 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:28:58.011 | INFO     | app.main:chat:357 - 最终回复: 您好，我是小e。关于“减肥最快”的方法，需要明确：健康减重速度通常建议每周0.5-1公斤，过快可能导致代谢紊乱或反弹。最科学的高效减脂方案需结合饮食、运动与生活习惯调整。
+
+**核心步骤：**
+1. **控制热量缺口**：每日摄入比消耗低300-500千卡，优先减少精制碳水（如米饭、甜点）和加工食品，增加蛋白质（鸡胸肉、豆制品）和膳食纤维（蔬菜、全谷物）。
+2. **高强度间歇训练**：如20分钟HIIT（冲刺跑+休息交替），可提升后燃效应，比匀速有氧更高效燃脂。
+3. **充足睡眠与压力管理**：睡眠不足会升高皮质醇，促进脂肪储存，建议每晚7-9小时。
+
+需注意：极端节食或过度运动可能引发健康风险。若需快速减重（如术前），需在医生指导下采用极低热量饮食。建议咨询营养师制定个性化方案。
+2026-05-01 18:38:28.258 | INFO     | app.main:lifespan:38 - Starting ecommerce-customer-service-agent v1.0.0
+2026-05-01 18:38:28.261 | INFO     | app.main:lifespan:39 - Debug mode: False
+2026-05-01 18:39:24.110 | INFO     | app.main:chat:101 - 收到消息: 查一下DD20260501002订单
+2026-05-01 18:39:24.113 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:39:24.116 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:39:24.147 | INFO     | app.services.data_service:_load_all_data:126 - Loaded 10 orders, 10 products, 6 logistics, 4 refunds, 10 users, 7 coupons
+2026-05-01 18:39:24.150 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501002', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.0032389163970947266}
+2026-05-01 18:39:24.152 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:39:24.154 | INFO     | app.main:chat:204 - 查询到订单: Order(order_id='DD20260501002', user_id='U002', product_id='P002', product_name='男士纯棉T恤 白色 XL', quantity=1, unit_price=89.0, total_amount=89.0, status='shipped', platform='pinduoduo', created_at='2026-05-01 11:15:00', shipping_address='上海市浦东新区世纪大道100号', receiver_name='李四', receiver_phone='13800138002')
+2026-05-01 18:39:24.155 | INFO     | app.main:chat:357 - 最终回复: items=[] scores=[]
+═══════════════════════════════════════════
+                    📋 订单分析报告
+═══════════════════════════════════════════
+
+【基本信息】
+├ 订单编号: DD20260501002
+├ 商品名称: 男士纯棉T恤 白色 XL
+├ 购买数量: 1件
+├ 订单金额: ￥89.0
+├ 订单状态: 已发货，正在配送途中
+├ 购买平台: pinduoduo
+├ 下单时间: 2026-05-01 11:15:00
+
+【收货信息】
+├ 收件人: 李四
+└ 收货地址: 上海市浦东新区世纪大道100号
+
+【物流分析】
+├ 快递公司: 顺丰速运
+├ 运单号: SF1234567890
+├ 当前状态: in_transit
+├ 实时位置: 上海分拨中心
+└ 预计送达: 2026-05-03
+
+【物流轨迹】
+  1. 2026-05-01 12:00:00 商家已发货
+  2. 2026-05-01 18:00:00 到达上海分拨中心
+  3. 2026-05-02 08:00:00 正在派送中
+【同类商品推荐】
+├ 男士纯棉T恤 白色 XL - ￥89.0
+│   热销880件，好评如潮
+【当前可用优惠】
+├ 新人专享券: 满100.0减20.0元
+├ 满100减20: 满100.0减20.0元
+├ 夏装专场8折: 满200.0减0.2元
+
+【小e智能建议】
+🚚 您的宝贝已发出，正在配送途中，请保持电话畅通~
+💡 温馨提示：预计1-2天内送达，如联系不上快递可联系商家协查~
+2026-05-01 18:39:29.622 | INFO     | app.main:chat:101 - 收到消息: 查一下DD20260501002订单
+2026-05-01 18:39:29.626 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:39:29.629 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:39:29.633 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501002', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.0032389163970947266}
+2026-05-01 18:39:29.635 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:39:29.637 | INFO     | app.main:chat:204 - 查询到订单: Order(order_id='DD20260501002', user_id='U002', product_id='P002', product_name='男士纯棉T恤 白色 XL', quantity=1, unit_price=89.0, total_amount=89.0, status='shipped', platform='pinduoduo', created_at='2026-05-01 11:15:00', shipping_address='上海市浦东新区世纪大道100号', receiver_name='李四', receiver_phone='13800138002')
+2026-05-01 18:39:29.638 | INFO     | app.main:chat:357 - 最终回复: items=[] scores=[]
+═══════════════════════════════════════════
+                    📋 订单分析报告
+═══════════════════════════════════════════
+
+【基本信息】
+├ 订单编号: DD20260501002
+├ 商品名称: 男士纯棉T恤 白色 XL
+├ 购买数量: 1件
+├ 订单金额: ￥89.0
+├ 订单状态: 已发货，正在配送途中
+├ 购买平台: pinduoduo
+├ 下单时间: 2026-05-01 11:15:00
+
+【收货信息】
+├ 收件人: 李四
+└ 收货地址: 上海市浦东新区世纪大道100号
+
+【物流分析】
+├ 快递公司: 顺丰速运
+├ 运单号: SF1234567890
+├ 当前状态: in_transit
+├ 实时位置: 上海分拨中心
+└ 预计送达: 2026-05-03
+
+【物流轨迹】
+  1. 2026-05-01 12:00:00 商家已发货
+  2. 2026-05-01 18:00:00 到达上海分拨中心
+  3. 2026-05-02 08:00:00 正在派送中
+【同类商品推荐】
+├ 男士纯棉T恤 白色 XL - ￥89.0
+│   热销880件，好评如潮
+【当前可用优惠】
+├ 新人专享券: 满100.0减20.0元
+├ 满100减20: 满100.0减20.0元
+├ 夏装专场8折: 满200.0减0.2元
+
+【小e智能建议】
+🚚 您的宝贝已发出，正在配送途中，请保持电话畅通~
+💡 温馨提示：预计1-2天内送达，如联系不上快递可联系商家协查~
+2026-05-01 18:39:33.112 | INFO     | app.main:chat:101 - 收到消息: DD20260501005的物流到哪了
+2026-05-01 18:39:33.115 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:39:33.119 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:39:33.122 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'logistics_query', 'sub_intent': 'logistics_query', 'confidence': 0.8, 'entities': {'order_id': 'DD20260501005', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看物流详情', '催促发货'], 'platform': 'taobao', 'processing_time': 0.0005109310150146484}
+2026-05-01 18:39:33.124 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:39:33.125 | INFO     | app.main:chat:339 - 查询到物流: Logistics(tracking_no='YTO9876543210', order_id='DD20260501005', company='圆通速递', status='in_transit', current_location='杭州中转站', estimated_delivery='2026-05-04', created_at='2026-05-01 15:00:00', updated_at='2026-05-02 10:00:00', traces=['2026-05-01 15:00:00 商家已发货', '2026-05-02 06:00:00 到达杭州中转站', '2026-05-02 10:00:00 正在派送中'])
+2026-05-01 18:39:33.127 | INFO     | app.main:chat:357 - 最终回复: items=[] scores=[]
+═══════════════════════════════════════════
+              📦 物流追踪报告
+═══════════════════════════════════════════
+
+【物流详情】
+├ 快递公司: 圆通速递
+├ 运单号码: YTO9876543210
+├ 当前状态: in_transit
+├ 实时位置: 杭州中转站
+└ 预计送达: 2026-05-04
+
+【完整轨迹】
+  1. 2026-05-01 15:00:00 商家已发货
+  2. 2026-05-02 06:00:00 到达杭州中转站
+  3. 2026-05-02 10:00:00 正在派送中
+
+【物流状态分析】您的包裹正在运输途中，预计很快送达，请保持电话畅通~
+═══════════════════════════════════════════
+2026-05-01 18:39:37.294 | INFO     | app.main:chat:101 - 收到消息: 我想买一件T恤
+2026-05-01 18:39:37.297 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:39:37.300 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:39:37.303 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 18:39:37.306 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:39:38.607 | INFO     | app.main:chat:357 - 最终回复: 您好！我们有一款热销的男士纯棉T恤白色XL码，仅需￥89，好评如潮！您想看看吗？或者有其他款式需求，我也帮您推荐～
+2026-05-01 18:39:42.871 | INFO     | app.main:chat:101 - 收到消息: 有哪些优惠券可以用
+2026-05-01 18:39:42.874 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:39:42.877 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:39:42.881 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'price_query', 'sub_intent': 'price_query', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看最新价格', '查看优惠活动'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:39:42.884 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:39:42.884 | INFO     | app.main:chat:236 - 查询到优惠券: [Coupon(coupon_id='COUP001', coupon_name='新人专享券', type='cash', discount_amount=20.0, min_order_amount=100.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=450, total_count=500), Coupon(coupon_id='COUP002', coupon_name='满100减20', type='cash', discount_amount=20.0, min_order_amount=100.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-15', status='active', remaining_count=300, total_count=500), Coupon(coupon_id='COUP003', coupon_name='夏装专场8折', type='percentage', discount_amount=0.2, min_order_amount=200.0, applicable_products='P001;P002;P003', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=200, total_count=300), Coupon(coupon_id='COUP004', coupon_name='限时抢购券', type='cash', discount_amount=50.0, min_order_amount=300.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-07', status='active', remaining_count=80, total_count=100), Coupon(coupon_id='COUP005', coupon_name='VIP专属85折', type='percentage', discount_amount=0.15, min_order_amount=0.0, applicable_products='', start_date='2026-05-01', end_date='2026-05-31', status='active', remaining_count=50, total_count=100), Coupon(coupon_id='COUP006', coupon_name='母婴专场券', type='cash', discount_amount=30.0, min_order_amount=150.0, applicable_products='P006', start_date='2026-05-01', end_date='2026-06-30', status='active', remaining_count=400, total_count=500), Coupon(coupon_id='COUP007', coupon_name='鞋类专区8折', type='percentage', discount_amount=0.2, min_order_amount=250.0, applicable_products='P003;P007', start_date='2026-05-01', end_date='2026-05-20', status='active', remaining_count=150, total_count=200)]
+2026-05-01 18:39:44.013 | INFO     | app.main:chat:357 - 最终回复: 亲，目前可用的优惠券有：新人专享券满100减20、满100减20券、夏装专场8折券等。您买的T恤是￥89，如果凑单到100元就能用券省钱哦！😊
+2026-05-01 18:40:03.024 | INFO     | app.main:chat:101 - 收到消息: 查一下DD20260501003订单
+2026-05-01 18:40:03.026 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:40:03.030 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:40:03.033 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'order_status', 'sub_intent': 'order_status', 'confidence': 0.65, 'entities': {'order_id': 'DD20260501003', 'size': '20', 'platform': 'taobao'}, 'suggestions': ['查看订单详情', '查看物流'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:40:03.035 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:40:03.036 | INFO     | app.main:chat:204 - 查询到订单: Order(order_id='DD20260501003', user_id='U003', product_id='P003', product_name='运动休闲鞋 黑色 42码', quantity=1, unit_price=299.0, total_amount=299.0, status='paid', platform='douyin', created_at='2026-05-01 12:00:00', shipping_address='广州市天河区珠江新城', receiver_name='王五', receiver_phone='13800138003')
+2026-05-01 18:40:03.037 | INFO     | app.main:chat:357 - 最终回复: items=[] scores=[]
+═══════════════════════════════════════════
+                    📋 订单分析报告
+═══════════════════════════════════════════
+
+【基本信息】
+├ 订单编号: DD20260501003
+├ 商品名称: 运动休闲鞋 黑色 42码
+├ 购买数量: 1件
+├ 订单金额: ￥299.0
+├ 订单状态: 已支付，等待商家发货
+├ 购买平台: douyin
+├ 下单时间: 2026-05-01 12:00:00
+
+【收货信息】
+├ 收件人: 王五
+└ 收货地址: 广州市天河区珠江新城
+
+【同类商品推荐】
+├ 运动休闲鞋 黑色 42码 - ￥299.0
+│   热销920件，好评如潮
+【当前可用优惠】
+├ 新人专享券: 满100.0减20.0元
+├ 满100减20: 满100.0减20.0元
+├ 夏装专场8折: 满200.0减0.2元
+
+【小e智能建议】
+✅ 您的订单已支付成功，商家会在24小时内安排发货哦~
+💡 温馨提示：如有急需发货的商品，建议您联系商家说明情况，小e帮您催促~
+2026-05-01 18:40:10.352 | INFO     | app.main:chat:101 - 收到消息: 你们的退货政策是什么
+2026-05-01 18:40:10.354 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:40:10.357 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:40:10.361 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'return_request', 'sub_intent': 'return_request', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['申请退货', '查看退货政策'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:40:10.363 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:40:11.258 | INFO     | app.main:chat:357 - 最终回复: 亲，淘宝平台的退货政策通常是：商品不影响二次销售，7天内可无理由退换货。具体以您购买的店铺规则为准，建议联系商家确认哦～
+2026-05-01 18:40:16.022 | INFO     | app.main:chat:101 - 收到消息: 你们发什么快递
+2026-05-01 18:40:16.024 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:40:16.028 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:40:16.030 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'logistics_query', 'sub_intent': 'logistics_query', 'confidence': 0.65, 'entities': {'platform': 'taobao'}, 'suggestions': ['查看物流详情', '催促发货'], 'platform': 'taobao', 'processing_time': 0.0}
+2026-05-01 18:40:16.032 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:40:17.158 | INFO     | app.main:chat:357 - 最终回复: 亲，我们通常使用中通、圆通、韵达等主流快递发货，具体以商家实际安排为准哦～如果您有特殊快递要求，可以联系商家协商，小e随时为您服务！😊
+2026-05-01 18:40:42.792 | INFO     | app.main:chat:101 - 收到消息: 我想问问衬衫怎么洗
+2026-05-01 18:40:42.796 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:38 - Loaded 10 FAQ items
+2026-05-01 18:40:42.799 | INFO     | app.agents.knowledge_agent:_load_knowledge_base:55 - Loaded 5 product knowledge items
+2026-05-01 18:40:42.803 | INFO     | app.main:chat:117 - 识别结果: {'intent': 'unknown', 'sub_intent': None, 'confidence': 0.0, 'entities': {}, 'suggestions': [], 'platform': 'unknown', 'processing_time': 0.0}
+2026-05-01 18:40:42.804 | INFO     | app.main:chat:124 - 知识库检索结果: items=[] scores=[]
+2026-05-01 18:40:45.164 | INFO     | app.main:chat:357 - 最终回复: 衬衫的正确洗涤方法需根据面料类型区分。棉质衬衫建议用30℃以下温水手洗或机洗（选择轻柔模式），避免高温导致缩水；真丝衬衫必须手洗，使用专用丝毛洗涤剂，不可拧干；混纺面料可机洗但需翻面装入洗衣袋。清洗前务必查看标签，白色衬衫可用氧漂剂去除领口汗渍（避免氯漂），彩色衬衫建议冷水单独洗涤防串色。晾晒时选择阴干，避免阳光直射导致褪色，悬挂时需抚平褶皱，免烫衬衫建议半干时悬挂。若遇顽固污渍，可在洗涤前用温和的肥皂水局部预处理。

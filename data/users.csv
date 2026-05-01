@@ -1,0 +1,11 @@
+user_id,nickname,phone,platform,level,points,total_orders,total_amount,created_at,last_order_date,vip_status
+U001,时尚小鱼,13800138001,taobao,gold,3500,15,2580.00,2025-06-15,2026-05-01,active
+U002,运动达人阿强,13800138002,pinduoduo,silver,1200,8,980.00,2025-08-20,2026-05-01,inactive
+U003,购物狂人小美,13800138003,douyin,gold,5800,22,4500.00,2025-03-10,2026-05-01,active
+U004,理性消费者,13800138004,taobao,normal,500,5,890.00,2025-11-25,2026-04-30,inactive
+U005,职场丽人,13800138005,taobao,silver,2100,12,1890.00,2025-07-08,2026-05-01,active
+U006,新手妈妈,13800138006,pinduoduo,normal,300,3,380.00,2026-01-15,2026-05-01,inactive
+U007,商务男士,13800138007,taobao,gold,4200,18,3200.00,2025-05-22,2026-04-29,active
+U008,学生党小李,13800138008,douyin,normal,800,4,560.00,2025-12-01,2026-05-01,inactive
+U009,精打细算,13800138009,pinduoduo,silver,1500,10,1200.00,2025-09-18,2026-04-28,inactive
+U010,品质生活,13800138010,taobao,gold,6000,25,5200.00,2025-04-05,2026-05-01,active

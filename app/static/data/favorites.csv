@@ -1,0 +1,13 @@
+favorite_id,user_id,product_id,product_name,price,added_at,notify_stock,notify_price_drop,status
+FAV001,U001,P001,夏季新款碎花连衣裙,129.00,2026-04-15 10:00:00,true,false,active
+FAV002,U001,P005,女士手提包 黑色,399.00,2026-04-18 14:00:00,false,true,active
+FAV003,U002,P003,运动休闲鞋 黑色 42码,299.00,2026-04-20 09:00:00,true,false,active
+FAV004,U003,P006,婴儿纯棉连体衣 0-6月,69.00,2026-04-22 11:00:00,false,false,active
+FAV005,U004,P004,韩版宽松牛仔裤,159.00,2026-04-25 15:00:00,true,false,active
+FAV006,U005,P008,学生双肩背包 蓝色,129.00,2026-04-28 10:00:00,false,false,active
+FAV007,U006,P009,防晒衫 白色 均码,79.00,2026-05-01 08:00:00,true,false,active
+FAV008,U007,P007,男士商务皮鞋 棕色 41码,459.00,2026-04-30 16:00:00,false,true,active
+FAV009,U008,P010,真皮钱包 黑色,199.00,2026-05-01 09:00:00,false,false,active
+FAV010,U009,P002,男士纯棉T恤 白色 XL,89.00,2026-05-01 10:00:00,false,false,active
+FAV011,U010,P001,夏季新款碎花连衣裙,129.00,2026-04-10 12:00:00,true,true,active
+FAV012,U001,P007,男士商务皮鞋 棕色 41码,459.00,2026-05-01 11:00:00,false,false,active

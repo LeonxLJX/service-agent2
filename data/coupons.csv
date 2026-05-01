@@ -1,0 +1,8 @@
+coupon_id,coupon_name,type,discount_amount,min_order_amount,applicable_products,start_date,end_date,status,remaining_count,total_count
+COUP001,新人专享券,cash,20,100,,2026-05-01,2026-05-31,active,450,500
+COUP002,满100减20,cash,20,100,,2026-05-01,2026-05-15,active,300,500
+COUP003,夏装专场8折,percentage,0.2,200,P001;P002;P003,2026-05-01,2026-05-31,active,200,300
+COUP004,限时抢购券,cash,50,300,,2026-05-01,2026-05-07,active,80,100
+COUP005,VIP专属85折,percentage,0.15,0,,2026-05-01,2026-05-31,active,50,100
+COUP006,母婴专场券,cash,30,150,P006,2026-05-01,2026-06-30,active,400,500
+COUP007,鞋类专区8折,percentage,0.2,250,P003;P007,2026-05-01,2026-05-20,active,150,200

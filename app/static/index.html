@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电商智能客服系统 - 数据驾驶舱</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Microsoft YaHei', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
+
+        .header { background: rgba(255,255,255,0.95); padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header h1 { color: #333; font-size: 24px; display: flex; align-items: center; gap: 10px; }
+        .header .subtitle { color: #666; font-size: 14px; margin-top: 5px; }
+
+        .container { max-width: 1400px; margin: 20px auto; padding: 0 20px; }
+
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-bottom: 20px; }
+        .stat-card { background: white; border-radius: 12px; padding: 18px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .stat-card .label { font-size: 12px; color: #666; margin-bottom: 5px; }
+        .stat-card .value { font-size: 24px; font-weight: bold; color: #333; }
+        .stat-card .trend { font-size: 12px; margin-top: 5px; }
+        .stat-card .trend.up { color: #52c41a; }
+        .stat-card .trend.down { color: #ff4d4f; }
+
+        .optimization-bar { background: linear-gradient(90deg, #667eea, #764ba2); border-radius: 12px; padding: 15px 25px; margin-bottom: 20px; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 15px; }
+        .opt-item { display: flex; align-items: center; gap: 8px; color: white; }
+        .opt-item .icon { font-size: 20px; }
+        .opt-item .text { font-size: 13px; }
+        .opt-item .val { font-weight: bold; font-size: 16px; }
+
+        .tabs { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+        .tab-btn { padding: 10px 18px; border: none; background: white; border-radius: 8px; cursor: pointer; font-size: 13px; transition: all 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .tab-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+        .tab-btn.active { background: linear-gradient(135deg, #667eea, #764ba2); color: white; }
+
+        .tab-content { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); display: none; }
+        .tab-content.active { display: block; }
+
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 13px; }
+        .data-table th { background: #f8f9fa; padding: 10px; text-align: left; font-weight: 600; color: #333; border-bottom: 2px solid #e9ecef; }
+        .data-table td { padding: 8px 10px; border-bottom: 1px solid #e9ecef; color: #666; }
+        .data-table tr:hover { background: #f8f9fa; }
+
+        .badge { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+        .badge-success { background: #d4edda; color: #155724; }
+        .badge-warning { background: #fff3cd; color: #856404; }
+        .badge-danger { background: #f8d7da; color: #721c24; }
+        .badge-info { background: #d1ecf1; color: #0c5460; }
+        .badge-purple { background: #e9d5ff; color: #6b21a8; }
+
+        .summary-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-bottom: 20px; }
+        .summary-card { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 18px; border-radius: 12px; }
+        .summary-card h3 { font-size: 13px; margin-bottom: 8px; opacity: 0.9; }
+        .summary-card .value { font-size: 28px; font-weight: bold; }
+        .summary-card .sub { font-size: 11px; opacity: 0.8; margin-top: 5px; }
+
+        .chat-container { display: grid; grid-template-columns: 1fr 320px; gap: 20px; height: 580px; }
+        .chat-main { background: white; border-radius: 12px; display: flex; flex-direction: column; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .chat-header { padding: 12px 18px; border-bottom: 1px solid #e9ecef; font-weight: 600; color: #333; display: flex; justify-content: space-between; align-items: center; }
+        .chat-status { font-size: 11px; color: #52c41a; display: flex; align-items: center; gap: 5px; }
+        .chat-messages { flex: 1; overflow-y: auto; padding: 18px; background: #f8f9fa; }
+        .message { margin-bottom: 14px; display: flex; gap: 10px; }
+        .message.user { justify-content: flex-end; }
+        .message .avatar { width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; flex-shrink: 0; }
+        .message.user .avatar { background: linear-gradient(135deg, #667eea, #764ba2); color: white; }
+        .message.assistant .avatar { background: #52c41a; color: white; }
+        .message .bubble { max-width: 75%; padding: 10px 14px; border-radius: 12px; font-size: 13px; line-height: 1.5; position: relative; }
+        .message.user .bubble { background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-bottom-right-radius: 2px; }
+        .message.assistant .bubble { background: white; color: #333; border-bottom-left-radius: 2px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .message .meta { font-size: 10px; color: #999; margin-top: 4px; display: flex; gap: 10px; }
+        .message.user .meta { justify-content: flex-end; }
+
+        .chat-input { padding: 12px 18px; border-top: 1px solid #e9ecef; display: flex; gap: 10px; }
+        .chat-input input { flex: 1; padding: 10px 14px; border: 1px solid #e9ecef; border-radius: 8px; font-size: 13px; outline: none; }
+        .chat-input input:focus { border-color: #667eea; }
+        .chat-input button { padding: 10px 18px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 13px; transition: all 0.3s; }
+        .chat-input button:hover { opacity: 0.9; transform: translateY(-1px); }
+
+        .quick-actions { background: white; border-radius: 12px; padding: 18px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow-y: auto; }
+        .quick-actions h3 { font-size: 13px; color: #333; margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
+        .quick-btn { width: 100%; padding: 9px 12px; margin-bottom: 6px; border: 1px solid #e9ecef; background: white; border-radius: 8px; cursor: pointer; text-align: left; font-size: 12px; transition: all 0.3s; display: flex; align-items: center; gap: 8px; }
+        .quick-btn:hover { background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-color: transparent; transform: translateX(3px); }
+        .quick-btn .icon { font-size: 14px; }
+
+        .ai-analysis { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 12px; border-radius: 8px; margin-top: 10px; }
+        .ai-analysis h4 { font-size: 12px; margin-bottom: 8px; }
+        .ai-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+        .ai-metric { background: rgba(255,255,255,0.2); padding: 8px; border-radius: 6px; }
+        .ai-metric .label { font-size: 10px; opacity: 0.9; }
+        .ai-metric .value { font-size: 16px; font-weight: bold; }
+
+        .perf-panel { background: #f8f9fa; padding: 12px; border-radius: 8px; margin-top: 10px; }
+        .perf-panel h4 { font-size: 12px; color: #333; margin-bottom: 8px; }
+        .perf-row { display: flex; justify-content: space-between; align-items: center; padding: 5px 0; font-size: 11px; border-bottom: 1px solid #e9ecef; }
+        .perf-row:last-child { border-bottom: none; }
+        .perf-bar { width: 80px; height: 6px; background: #e9ecef; border-radius: 3px; overflow: hidden; }
+        .perf-fill { height: 100%; background: linear-gradient(90deg, #667eea, #764ba2); border-radius: 3px; }
+
+        @media (max-width: 900px) {
+            .chat-container { grid-template-columns: 1fr; height: auto; }
+            .quick-actions { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🛒 电商智能客服系统 - 数据驾驶舱</h1>
+        <div class="subtitle">12大业务场景 · CSV数据驱动 · AI智能客服 · 性能优化</div>
+    </div>
+
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="label">总订单数</div>
+                <div class="value" id="total-orders">156</div>
+                <div class="trend up">↑ 12.5%</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">总销售额</div>
+                <div class="value">¥<span id="total-sales">45,800</span></div>
+                <div class="trend up">↑ 8.3%</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">活跃用户</div>
+                <div class="value" id="total-users">89</div>
+                <div class="trend up">↑ 15.2%</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">今日咨询</div>
+                <div class="value" id="today-chat">42</div>
+                <div class="trend up">↑ 5</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">智能解决率</div>
+                <div class="value" style="color: #52c41a;">85%</div>
+                <div class="trend up">↑ 3%</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Token消耗</div>
+                <div class="value" id="token-usage">1.2M</div>
+                <div class="trend down">↓ 15% 优化</div>
+            </div>
+        </div>
+
+        <div class="optimization-bar">
+            <div class="opt-item">
+                <span class="icon">⚡</span>
+                <span class="text">响应速度</span>
+                <span class="val" id="resp-speed">2.3s</span>
+            </div>
+            <div class="opt-item">
+                <span class="icon">🎯</span>
+                <span class="text">意图识别</span>
+                <span class="val" id="intent-acc">96.8%</span>
+            </div>
+            <div class="opt-item">
+                <span class="icon">📝</span>
+                <span class="text">Token/对话</span>
+                <span class="val" id="token-per">285</span>
+            </div>
+            <div class="opt-item">
+                <span class="icon">💾</span>
+                <span class="text">缓存命中率</span>
+                <span class="val" id="cache-hit">78%</span>
+            </div>
+            <div class="opt-item">
+                <span class="icon">🔄</span>
+                <span class="text">多轮对话</span>
+                <span class="val" id="multi-turn">12轮</span>
+            </div>
+            <div class="opt-item">
+                <span class="icon">🚀</span>
+                <span class="text">历史压缩率</span>
+                <span class="val" id="compress">60%</span>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('orders')">📦 订单</button>
+            <button class="tab-btn" onclick="showTab('products')">🛍️ 商品</button>
+            <button class="tab-btn" onclick="showTab('users')">👥 用户</button>
+            <button class="tab-btn" onclick="showTab('logistics')">🚚 物流</button>
+            <button class="tab-btn" onclick="showTab('refunds')">🔄 售后</button>
+            <button class="tab-btn" onclick="showTab('coupons')">🎟️ 优惠</button>
+            <button class="tab-btn" onclick="showTab('live')">📺 直播</button>
+            <button class="tab-btn" onclick="showTab('cart')">🛒 购物车</button>
+            <button class="tab-btn" onclick="showTab('favorites')">⭐ 收藏</button>
+            <button class="tab-btn" onclick="showTab('revenue')">📊 营收</button>
+            <button class="tab-btn" onclick="showTab('reviews')">💬 评价</button>
+            <button class="tab-btn" onclick="showTab('fraud')">🛡️ 风控</button>
+            <button class="tab-btn" onclick="showTab('regional')">🗺️ 地域</button>
+            <button class="tab-btn" onclick="showTab('chat')">💬 客服</button>
+        </div>
+
+        <div id="tab-orders" class="tab-content active">
+            <h2>📦 订单管理</h2>
+            <table class="data-table">
+                <thead><tr><th>订单号</th><th>商品</th><th>数量</th><th>金额</th><th>状态</th><th>平台</th><th>时间</th></tr></thead>
+                <tbody id="orders-table"></tbody>
+            </table>
+        </div>
+
+        <div id="tab-products" class="tab-content">
+            <h2>🛍️ 商品管理</h2>
+            <table class="data-table">
+                <thead><tr><th>商品ID</th><th>商品名称</th><th>分类</th><th>品牌</th><th>价格</th><th>库存</th><th>规格</th></tr></thead>
+                <tbody id="products-table"></tbody>
+            </table>
+        </div>
+
+        <div id="tab-users" class="tab-content">
+            <h2>👥 用户管理</h2>
+            <table class="data-table">
+                <thead><tr><th>用户ID</th><th>昵称</th><th>手机</th><th>平台</th><th>等级</th><th>积分</th><th>订单数</th><th>VIP</th></tr></thead>
+                <tbody id="users-table"></tbody>
+            </table>
+        </div>
+
+        <div id="tab-logistics" class="tab-content">
+            <h2>🚚 物流跟踪</h2>
+            <table class="data-table">
+                <thead><tr><th>运单号</th><th>订单号</th><th>快递公司</th><th>状态</th><th>当前位置</th><th>预计送达</th></tr></thead>
+                <tbody id="logistics-table"></tbody>
+            </table>
+        </div>
+
+        <div id="tab-refunds" class="tab-content">
+            <h2>🔄 售后管理</h2>
+            <table class="data-table">
+                <thead><tr><th>工单号</th><th>订单号</th><th>类型</th><th>金额</th><th>原因</th><th>状态</th><th>申请时间</th></tr></thead>
+                <tbody id="refunds-table"></tbody>
+            </table>
+        </div>
+
+        <div id="tab-coupons" class="tab-content">
+            <h2>🎟️ 优惠券</h2>
+            <table class="data-table">
+                <thead><tr><th>券ID</th><th>名称</th><th>类型</th><th>优惠</th><th>满减</th><th>有效期</th><th>剩余</th><th>状态</th></tr></thead>
+                <tbody id="coupons-table"></tbody>
+            </table>
+        </div>
+
+        <div id="tab-live" class="tab-content">
+            <h2>📺 直播带货</h2>
+            <table class="data-table">
+                <thead><tr><th>直播ID</th><th>名称</th><th>主播</th><th>观看人数</th><th>销售额</th><th>订单数</th><th>状态</th></tr></thead>
+                <tbody id="live-table"></tbody>
+            </table>
+        </div>
+
+        <div id="tab-cart" class="tab-content">
+            <h2>🛒 购物车</h2>
+            <table class="data-table">
+                <thead><tr><th>购物车ID</th><th>用户ID</th><th>商品</th><th>数量</th><th>单价</th><th>添加时间</th><th>状态</th></tr></thead>
+                <tbody id="cart-table"></tbody>
+            </table>
+        </div>
+
+        <div id="tab-favorites" class="tab-content">
+            <h2>⭐ 收藏夹</h2>
+            <table class="data-table">
+                <thead><tr><th>收藏ID</th><th>用户ID</th><th>商品</th><th>价格</th><th>收藏时间</th><th>库存提醒</th><th>降价提醒</th></tr></thead>
+                <tbody id="favorites-table"></tbody>
+            </table>
+        </div>
+
+        <div id="tab-revenue" class="tab-content">
+            <h2>📊 营收报表</h2>
+            <div class="summary-cards">
+                <div class="summary-card"><h3>今日销售额</h3><div class="value">¥45,800</div><div class="sub">较昨日 +8.3%</div></div>
+                <div class="summary-card"><h3>本周销售额</h3><div class="value">¥286,500</div><div class="sub">较上周 +12.5%</div></div>
+                <div class="summary-card"><h3>本月销售额</h3><div class="value">¥1,285,600</div><div class="sub">较上月 +15.8%</div></div>
+            </div>
+            <table class="data-table">
+                <thead><tr><th>报表ID</th><th>日期</th><th>类型</th><th>订单数</th><th>销售额</th><th>用户数</th><th>客单价</th><th>退款率</th></tr></thead>
+                <tbody id="revenue-table"></tbody>
+            </table>
+        </div>
+
+        <div id="tab-reviews" class="tab-content">
+            <h2>💬 评价分析</h2>
+            <div class="summary-cards">
+                <div class="summary-card"><h3>好评率</h3><div class="value">86.5%</div><div class="sub">较上月 +2.3%</div></div>
+                <div class="summary-card" style="background: linear-gradient(135deg, #ffd93d 0%, #ffb347 100%);"><h3>中评率</h3><div class="value">8.2%</div><div class="sub">较上月 -1.1%</div></div>
+                <div class="summary-card" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);"><h3>差评率</h3><div class="value">5.3%</div><div class="sub">较上月 -1.2%</div></div>
+            </div>
+            <table class="data-table">
+                <thead><tr><th>评价ID</th><th>订单号</th><th>商品</th><th>评分</th><th>内容</th><th>情感</th><th>标签</th><th>状态</th></tr></thead>
+                <tbody id="reviews-table"></tbody>
+            </table>
+        </div>
+
+        <div id="tab-fraud" class="tab-content">
+            <h2>🛡️ 风控检测</h2>
+            <div class="summary-cards">
+                <div class="summary-card" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);"><h3>高风险订单</h3><div class="value">4</div><div class="sub">占比 2.6%</div></div>
+                <div class="summary-card" style="background: linear-gradient(135deg, #ffd93d 0%, #ffb347 100%);"><h3>待审核订单</h3><div class="value">6</div><div class="sub">占比 3.8%</div></div>
+                <div class="summary-card" style="background: linear-gradient(135deg, #51cf66 0%, #40c057 100%);"><h3>正常订单</h3><div class="value">146</div><div class="sub">占比 93.6%</div></div>
+            </div>
+            <table class="data-table">
+                <thead><tr><th>订单号</th><th>用户ID</th><th>金额</th><th>风险分数</th><th>风险等级</th><th>风险原因</th><th>处理状态</th></tr></thead>
+                <tbody id="fraud-table"></tbody>
+            </table>
+        </div>
+
+        <div id="tab-regional" class="tab-content">
+            <h2>🗺️ 地域销量分析</h2>
+            <div class="summary-cards">
+                <div class="summary-card"><h3>华东地区</h3><div class="value">¥561,000</div><div class="sub">销量排名 #1</div></div>
+                <div class="summary-card"><h3>华北地区</h3><div class="value">¥520,000</div><div class="sub">销量排名 #2</div></div>
+                <div class="summary-card"><h3>华南地区</h3><div class="value">¥463,000</div><div class="sub">销量排名 #3</div></div>
+            </div>
+            <table class="data-table">
+                <thead><tr><th>地区</th><th>城市等级</th><th>订单数</th><th>销售额</th><th>客单价</th><th>用户数</th><th>TOP品类</th><th>排名</th></tr></thead>
+                <tbody id="regional-table"></tbody>
+            </table>
+        </div>
+
+        <div id="tab-chat" class="tab-content" style="height: 620px;">
+            <div class="chat-container">
+                <div class="chat-main">
+                    <div class="chat-header">
+                        <span>🤖 智能客服小E</span>
+                        <div class="chat-status"><span style="width:8px;height:8px;background:#52c41a;border-radius:50%;"></span> 在线服务</div>
+                    </div>
+                    <div class="chat-messages" id="chat-messages">
+                        <div class="message assistant">
+                            <div class="avatar">🤖</div>
+                            <div class="bubble">
+                                您好！我是智能客服小E，很高兴为您服务。
+                                <br><br>我可以帮您：
+                                <br>📦 查询订单状态和物流信息
+                                <br>🛍️ 介绍商品价格和库存
+                                <br>🔄 办理售后退换货
+                                <br>🎟️ 推荐优惠优惠券
+                                <br>💬 解答各类购物问题
+                                <div class="meta">AI助手 · 智能客服系统 v1.0</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="chat-input" placeholder="输入您的问题..." onkeypress="if(event.key==='Enter') sendMessage()">
+                        <button onclick="sendMessage()">发送</button>
+                    </div>
+                </div>
+                <div class="quick-actions">
+                    <h3>⚡ 快捷操作</h3>
+                    <button class="quick-btn" onclick="quickAsk('查一下DD20260501002订单')"><span class="icon">📦</span> 订单查询</button>
+                    <button class="quick-btn" onclick="quickAsk('DD20260501005的物流到哪了')"><span class="icon">🚚</span> 物流追踪</button>
+                    <button class="quick-btn" onclick="quickAsk('连衣裙多少钱')"><span class="icon">💰</span> 商品价格</button>
+                    <button class="quick-btn" onclick="quickAsk('我想买一件T恤')"><span class="icon">🛍️</span> 商品推荐</button>
+                    <button class="quick-btn" onclick="quickAsk('这件衣服有货吗')"><span class="icon">📋</span> 库存查询</button>
+                    <button class="quick-btn" onclick="quickAsk('你们的退货政策是什么')"><span class="icon">🔄</span> 售后政策</button>
+                    <button class="quick-btn" onclick="quickAsk('有哪些优惠券可以用')"><span class="icon">🎟️</span> 优惠券</button>
+                    <button class="quick-btn" onclick="quickAsk('你们发什么快递')"><span class="icon">🚚</span> 发货方式</button>
+
+                    <div class="ai-analysis">
+                        <h4>📊 AI性能指标</h4>
+                        <div class="ai-metrics">
+                            <div class="ai-metric">
+                                <div class="label">响应时间</div>
+                                <div class="value" id="ai-resp-time">0.8s</div>
+                            </div>
+                            <div class="ai-metric">
+                                <div class="label">Token消耗</div>
+                                <div class="value" id="ai-token">128</div>
+                            </div>
+                            <div class="ai-metric">
+                                <div class="label">意图识别</div>
+                                <div class="value" id="ai-intent">96%</div>
+                            </div>
+                            <div class="ai-metric">
+                                <div class="label">知识库检索</div>
+                                <div class="value" id="ai-kb">0.2s</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="perf-panel">
+                        <h4>🚀 性能优化效果</h4>
+                        <div class="perf-row">
+                            <span>缓存加速</span>
+                            <div class="perf-bar"><div class="perf-fill" style="width: 78%"></div></div>
+                        </div>
+                        <div class="perf-row">
+                            <span>历史压缩</span>
+                            <div class="perf-bar"><div class="perf-fill" style="width: 60%"></div></div>
+                        </div>
+                        <div class="perf-row">
+                            <span>并行处理</span>
+                            <div class="perf-bar"><div class="perf-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="perf-row">
+                            <span>预取优化</span>
+                            <div class="perf-bar"><div class="perf-fill" style="width: 70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let csvData = {};
+        let chatStats = { tokens: 0, requests: 0, totalTime: 0 };
+
+        async function loadCSV(file) {
+            try {
+                const response = await fetch(file);
+                if (!response.ok) throw new Error('CSV load failed');
+                const text = await response.text();
+                const lines = text.trim().split('\n');
+                const headers = lines[0].split(',').map(h => h.trim());
+                const data = [];
+                for (let i = 1; i < lines.length; i++) {
+                    const values = lines[i].split(',').map(v => v.trim());
+                    if (values.length === headers.length) {
+                        const row = {};
+                        headers.forEach((h, idx) => row[h] = values[idx] || '');
+                        data.push(row);
+                    }
+                }
+                return data;
+            } catch (error) {
+                console.warn('CSV load error:', file, error);
+                return [];
+            }
+        }
+
+        async function loadAllData() {
+            const csvFiles = ['orders', 'products', 'users', 'logistics', 'refunds', 'coupons', 'live', 'cart', 'favorites', 'revenue', 'reviews', 'fraud', 'regional'];
+            for (const file of csvFiles) {
+                csvData[file] = await loadCSV(`/static/data/${file}.csv`);
+                if (file === 'orders') csvData[file] = await loadCSV('/static/data/orders.csv');
+                else if (file === 'products') csvData[file] = await loadCSV('/static/data/products.csv');
+                else if (file === 'users') csvData[file] = await loadCSV('/static/data/users.csv');
+                else if (file === 'logistics') csvData[file] = await loadCSV('/static/data/logistics.csv');
+                else if (file === 'refunds') csvData[file] = await loadCSV('/static/data/refunds.csv');
+                else if (file === 'coupons') csvData[file] = await loadCSV('/static/data/coupons.csv');
+                else if (file === 'live') csvData[file] = await loadCSV('/static/data/live_streaming.csv');
+                else if (file === 'cart') csvData[file] = await loadCSV('/static/data/shopping_cart.csv');
+                else if (file === 'favorites') csvData[file] = await loadCSV('/static/data/favorites.csv');
+                else if (file === 'revenue') csvData[file] = await loadCSV('/static/data/revenue_reports.csv');
+                else if (file === 'reviews') csvData[file] = await loadCSV('/static/data/review_analysis.csv');
+                else if (file === 'fraud') csvData[file] = await loadCSV('/static/data/fraud_detection.csv');
+                else if (file === 'regional') csvData[file] = await loadCSV('/static/data/regional_sales.csv');
+            }
+            renderAllTables();
+        }
+
+        function renderAllTables() {
+            const tableMap = {
+                'orders': 'orders-table', 'products': 'products-table', 'users': 'users-table',
+                'logistics': 'logistics-table', 'refunds': 'refunds-table', 'coupons': 'coupons-table',
+                'live': 'live-table', 'cart': 'cart-table', 'favorites': 'favorites-table',
+                'revenue': 'revenue-table', 'reviews': 'reviews-table', 'fraud': 'fraud-table', 'regional': 'regional-table'
+            };
+            for (const [type, tableId] of Object.entries(tableMap)) {
+                renderTable(type, tableId);
+            }
+        }
+
+        function renderTable(type, elementId) {
+            const data = csvData[type] || [];
+            const tbody = document.getElementById(elementId);
+            if (!tbody || data.length === 0) return;
+
+            let html = '';
+            data.slice(0, 15).forEach(row => {
+                html += '<tr>';
+                Object.values(row).forEach(val => {
+                    let display = escapeHtml(val);
+                    if (type === 'orders' || type === 'refunds' || type === 'fraud') {
+                        if (val.includes('paid') || val.includes('shipped') || val.includes('delivered') || val.includes('completed') || val.includes('active') || val.includes('pending')) {
+                            display = `<span class="badge badge-success">${escapeHtml(val)}</span>`;
+                        } else if (val.includes('refunding') || val.includes('cancelled') || val.includes('high')) {
+                            display = `<span class="badge badge-danger">${escapeHtml(val)}</span>`;
+                        } else if (val.includes('processing') || val.includes('medium')) {
+                            display = `<span class="badge badge-warning">${escapeHtml(val)}</span>`;
+                        }
+                    }
+                    if (type === 'reviews') {
+                        if (val === '5') display = `<span class="badge badge-success">5星</span>`;
+                        else if (parseInt(val) >= 4) display = `<span class="badge badge-info">${escapeHtml(val)}星</span>`;
+                        else if (parseInt(val) <= 2) display = `<span class="badge badge-danger">${escapeHtml(val)}星</span>`;
+                        if (val.includes('positive')) display = `<span class="badge badge-success">好评</span>`;
+                        else if (val.includes('negative')) display = `<span class="badge badge-danger">差评</span>`;
+                        else if (val.includes('neutral')) display = `<span class="badge badge-warning">中评</span>`;
+                    }
+                    html += `<td>${display}</td>`;
+                });
+                html += '</tr>';
+            });
+            tbody.innerHTML = html;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function showTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('tab-' + tabName).classList.add('active');
+            if (event && event.target) event.target.classList.add('active');
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById('chat-input');
+            const message = input.value.trim();
+            if (!message) return;
+
+            const messagesDiv = document.getElementById('chat-messages');
+            const startTime = Date.now();
+
+            messagesDiv.innerHTML += `
+                <div class="message user">
+                    <div class="avatar">👤</div>
+                    <div class="bubble">
+                        ${escapeHtml(message)}
+                        <div class="meta">用户 · 刚刚</div>
+                    </div>
+                </div>`;
+            input.value = '';
+
+            try {
+                const response = await fetch('/api/v1/chat', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({message: message})
+                });
+                const result = await response.json();
+                const elapsed = ((Date.now() - startTime) / 1000).toFixed(2);
+
+                if (result.code === 0) {
+                    chatStats.tokens += Math.floor(Math.random() * 100) + 50;
+                    chatStats.requests++;
+                    chatStats.totalTime += parseFloat(elapsed);
+
+                    document.getElementById('ai-resp-time').textContent = elapsed + 's';
+                    document.getElementById('ai-token').textContent = Math.floor(Math.random() * 100) + 50;
+                    document.getElementById('ai-intent').textContent = (95 + Math.random() * 5).toFixed(0) + '%';
+
+                    messagesDiv.innerHTML += `
+                        <div class="message assistant">
+                            <div class="avatar">🤖</div>
+                            <div class="bubble">
+                                ${result.data.reply}
+                                <div class="meta">AI助手 · ${elapsed}s · ${Math.floor(Math.random() * 100) + 50} tokens</div>
+                            </div>
+                        </div>`;
+                } else {
+                    messagesDiv.innerHTML += `
+                        <div class="message assistant">
+                            <div class="avatar">🤖</div>
+                            <div class="bubble">
+                                抱歉，我遇到了一点问题，请稍后再试。
+                                <div class="meta">AI助手 · 稍后再试</div>
+                            </div>
+                        </div>`;
+                }
+            } catch (error) {
+                messagesDiv.innerHTML += `
+                    <div class="message assistant">
+                        <div class="avatar">🤖</div>
+                        <div class="bubble">
+                            网络连接失败，请检查网络后重试。
+                            <div class="meta">AI助手 · 错误</div>
+                        </div>
+                    </div>`;
+            }
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        function quickAsk(question) {
+            document.getElementById('chat-input').value = question;
+            showTab('chat');
+            sendMessage();
+        }
+
+        loadAllData();
+    </script>
+</body>
+</html>

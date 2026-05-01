@@ -1,0 +1,8 @@
+report_id,report_date,report_type,total_orders,total_amount,total_users,total_products,avg_order_value,top_product,refund_rate,status
+REP001,2026-05-01,daily,156,45800.00,89,45,293.59,P001,2.5%,completed
+REP002,2026-04-30,daily,145,42600.00,82,42,293.79,P003,3.1%,completed
+REP003,2026-04-29,daily,168,49200.00,95,48,292.86,P001,2.8%,completed
+REP004,2026-04-28,daily,132,38900.00,76,38,294.70,P005,2.2%,completed
+REP005,2026-04-27,weekly,856,245600.00,420,156,286.91,P001,2.6%,completed
+REP006,2026-05,WEEKLY,289,82500.00,156,68,285.47,P002,2.4%,pending
+REP007,2026-04,monthly,4520,1285600.00,1850,520,284.42,P001,2.7%,completed
