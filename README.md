@@ -1,400 +1,394 @@
 <div align="center">
 
-# 🛒 电商商家客服智能处理系统
-
-### Multi-Agent E-commerce Customer Service Intelligent System
+# 🛒 Multi-Agent E-commerce Customer Service System
 
 [![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104-green.svg)](https://fastapi.tiangolo.com/)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
-[![MiMo](https://img.shields.io/badge/MiMo-小米大模型-FF6B00.svg)](https://mimo.com/)
+[![MiMo](https://img.shields.io/badge/MiMo-Xiaomi%20LLM-FF6B00.svg)](https://mimo.com/)
 
 ---
 
-## 🤖 接入小米 MiMo 大模型
+## 🤖 Xiaomi MiMo LLM Integration
 
-本框架已适配 **小米 MiMo 大模型**，支持一键接入、多轮 Agent 调用、工具编排
+The framework is adapted for the **Xiaomi MiMo large language model**, supporting one-click onboarding, multi-turn agent calls, and tool orchestration.
 
-| 特性 | 说明 |
-|------|------|
-| 🔧 **一键接入** | 配置API Key即可使用 |
-| 🔄 **多轮对话** | 支持10+轮上下文记忆 |
-| 🛠️ **工具编排** | 自动调用查询/物流/优惠券等工具 |
-| 📊 **意图识别** | BERT深度学习，精准识别20+意图 |
-| 💬 **智能回复** | DeepSeek+MiMo双模型支持 |
+| Feature | Description |
+|---------|-------------|
+| 🔧 **One-click onboarding** | Configure an API key and go |
+| 🔄 **Multi-turn dialogue** | 10+ turns of context memory |
+| 🛠️ **Tool orchestration** | Auto-invokes query / logistics / coupon tools |
+| 📊 **Intent recognition** | BERT deep learning, 20+ intents recognized precisely |
+| 💬 **Smart replies** | Dual-model support: DeepSeek + MiMo |
 
-**快速开始**：
+**Quick start**:
 ```bash
 cd mimo-demo
 python mimo_demo.py
 ```
 
-**MiMo适配器**：[mimo-demo/mimo_adapter.py](mimo-demo/mimo_adapter.py)
+**MiMo adapter**: [mimo-demo/mimo_adapter.py](mimo-demo/mimo_adapter.py)
 
 ---
 
-### 核心指标
+### Core Metrics
 
-| 指标 | 数值 | 说明 |
-|------|------|------|
-| **响应时间** | **< 5秒** | 人工客服平均2分钟，提速96% |
-| **人工介入率** | **降低65%** | 智能处理常见问题 |
-| **Token节省** | **40%+** | 历史压缩+意图复用+提示词优化 |
-| **日均处理** | **300+咨询** | 7×24小时不间断服务 |
-| **客服人力节省** | **80小时/月** | 每月节省约80小时 |
+| Metric | Value | Notes |
+|--------|-------|-------|
+| **Response time** | **< 5s** | Human agents average 2 min — a 96% speedup |
+| **Human handoff rate** | **down 65%** | Handles common questions automatically |
+| **Token savings** | **40%+** | History compression + intent reuse + prompt optimization |
+| **Daily throughput** | **300+ inquiries** | 24/7 non-stop service |
+| **Agent hours saved** | **80 hrs/month** | Roughly 80 hours saved every month |
 
 ---
 
-## 💰 市场规模与变现逻辑
+## 💰 Market Size & Monetization
 
 <div align="center">
 
-### 🎯 千亿级市场，渗透率不足30%，巨大增量空间待挖掘
+### 🎯 A hundred-billion-yuan market with < 30% penetration and huge headroom
 
 </div>
 
-| 维度 | 详情 |
-|------|------|
-| **👥 市场覆盖** | 10万+小微商家 \| 5万+中型商家 \| 1万+大型商家 |
-| **🚀 规模化复制** | 全平台一键接入（淘宝/拼多多/抖音）\| 单服务器1000+商家并发 |
-| **📈 增值变现** | 用户画像+复购率+爆款预测 SaaS服务，贡献`30%+`营收增量 |
-| **⚡ 边际成本** | 规模下降至营收`8%`以内 |
+| Dimension | Details |
+|-----------|---------|
+| **👥 Market coverage** | 100K+ small merchants \| 50K+ mid-size merchants \| 10K+ large merchants |
+| **🚀 Scale replication** | One-click onboarding across platforms (Taobao / Pinduoduo / Douyin) \| 1000+ merchants concurrent per server |
+| **📈 Value-added monetization** | User profiling + repurchase rate + hot-item prediction SaaS, contributing `30%+` incremental revenue |
+| **⚡ Marginal cost** | Falls to within `8%` of revenue at scale |
 
 ---
 
-### 📍 落地扩张路径
+### 📍 Rollout Path
 
 ```
-3个月  →  长三角+珠三角  →  1000+ 商家试点
-6个月  →  10大核心城市  →  10万+ 商家
-12个月 →  全国50+城市   →  80万+ 商家  + 跨境电商拓展
+3 months  →  Yangtze & Pearl River Deltas  →  1000+ merchant pilots
+6 months  →  10 key cities                →  100K+ merchants
+12 months →  50+ cities nationwide        →  800K+ merchants + cross-border expansion
 ```
 
 ---
 
-### 🛡️ 核心壁垒
+### 🛡️ Core Moat
 
-| 技术壁垒 | 数据壁垒 | 渠道壁垒 |
-|---------|---------|---------|
-| 多Agent协作框架 | 12大场景对话数据 | 主流平台服务商合作 |
-| Token优化体系 | 10亿+条积累 | 获客成本-60% |
-| 成本 -40% | 模型迭代+50% | |
-| 速度 +3倍 | | |
-| 留存率 85%+ | | |
+| Technical moat | Data moat | Channel moat |
+|----------------|-----------|--------------|
+| Multi-agent collaboration framework | 12-scenario conversation data | Partnerships with mainstream platform providers |
+| Token optimization system | 1B+ accumulated records | Acquisition cost -60% |
+| Cost -40% | Model iteration +50% | |
+| Speed +3x | | |
+| Retention 85%+ | | |
 
 ---
 
-## 🏗️ 一、整体系统架构
+## 🏗️ 1. System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                              🚀 用户请求入口                                │
-│                    (淘宝/拼多多/抖音/微信 小程序/H5/APP)                      │
+│                              🚀 Request Entry                               │
+│                 (Taobao / Pinduoduo / Douyin / WeChat mini / H5 / APP)      │
 └────────────────────────────────────┬────────────────────────────────────────┘
                                      │
                                      ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                           ⚡ 负载均衡层                                     │
-│                    (Nginx + 限流 + 防爬 + 熔断)                             │
+│                           ⚡ Load Balancer Layer                             │
+│                    (Nginx + rate limiting + anti-scraping + circuit breaker) │
 └────────────────────────────────────┬────────────────────────────────────────┘
                                      │
                                      ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                           🌐 API 网关层                                     │
-│                    (FastAPI + Uvicorn ASGI + CORS)                         │
-│  ┌─────────────────────────────────────────────────────────────────────┐   │
-│  │  /api/v1/chat          → 意图识别 + 对话生成                         │   │
-│  │  /api/v1/intent         → 意图识别                                   │   │
-│  │  /api/v1/knowledge      → 知识库检索                                 │   │
-│  │  /health                → 健康检查                                   │   │
-│  └─────────────────────────────────────────────────────────────────────┘   │
+│                           🌐 API Gateway Layer                               │
+│                    (FastAPI + Uvicorn ASGI + CORS)                          │
+│  ┌─────────────────────────────────────────────────────────────────────┐    │
+│  │  /api/v1/chat          → intent recognition + response generation   │    │
+│  │  /api/v1/intent        → intent recognition                         │    │
+│  │  /api/v1/knowledge     → knowledge-base retrieval                   │    │
+│  │  /health               → health check                               │    │
+│  └─────────────────────────────────────────────────────────────────────┘    │
 └────────────────────────────────────┬────────────────────────────────────────┘
                                      │
                                      ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                           🤖 多 Agent 协作层                                │
-│                                                                             │
-│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐ │
-│  │  🔍 意图    │    │  📚 知识库  │    │  💬 对话    │    │  📊 数据    │ │
-│  │  识别Agent  │───▶│  检索Agent  │───▶│  生成Agent  │───▶│  服务Agent  │ │
-│  │             │    │             │    │             │    │             │ │
-│  │ - 意图分类  │    │ - 向量检索  │    │ - 上下文    │    │ - CSV读取   │ │
-│  │ - 实体提取  │    │ - 语义匹配  │    │ - 回复生成  │    │ - 数据聚合  │ │
-│  │ - 平台识别  │    │ - FAQ匹配   │    │ - 报告组装  │    │ - 缓存管理  │ │
-│  └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘ │
-│         │                  │                  │                  │         │
-│         └──────────────────┴────────┬────────┴──────────────────┘         │
+│                           🤖 Multi-Agent Collaboration Layer                 │
+│                                                                              │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐   │
+│  │  🔍 Intent   │    │  📚 Knowledge│    │  💬 Dialogue │    │  📊 Data    │   │
+│  │  Agent       │──▶│  Agent       │──▶│  Agent       │──▶│  Agent      │   │
+│  │              │    │              │    │              │    │             │   │
+│  │ - intent cls │    │ - vector retr│    │ - context    │    │ - CSV read  │   │
+│  │ - entity ext │    │ - semantic   │    │ - reply gen  │    │ - data agg  │   │
+│  │ - platform id│    │ - FAQ match  │    │ - report asm │    │ - cache mgmt│   │
+│  └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘   │
+│         │                  │                  │                  │           │
+│         └──────────────────┴────────┬────────┴──────────────────┘           │
 │                                     │                                        │
 └─────────────────────────────────────┼────────────────────────────────────────┘
                                       │
 ┌─────────────────────────────────────┼────────────────────────────────────────┐
-│                           🧠 AI 引擎层                                       │
-│                                                                             │
-│  ┌─────────────────────────────────────────────────────────────────────┐    │
-│  │                      🤖 DeepSeek V3 大模型                            │    │
-│  │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐               │    │
-│  │  │ 深度学习     │  │ 机器学习     │  │ NLP自然语言  │               │    │
-│  │  │ 语义理解     │  │ 意图分类     │  │ 上下文理解   │               │    │
-│  │  │ 知识推理     │  │ 实体识别     │  │ 情感分析     │               │    │
-│  │  │ 智能生成     │  │ 聚类分析     │  │ 文本摘要     │               │    │
-│  │  └──────────────┘  └──────────────┘  └──────────────┘               │    │
-│  └─────────────────────────────────────────────────────────────────────┘    │
-│                                     │                                        │
-│  ┌─────────────┐  ┌─────────────────────────────────────────────────────┐  │
-│  │  🔍 FAISS   │  │                    📦 数据层                          │  │
-│  │  向量检索    │  │  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐    │  │
-│  │  毫秒匹配   │  │  │orders  │ │products│ │logistics│ │coupons │    │  │
-│  │             │  │  │.csv    │ │.csv    │ │.csv     │ │.csv    │    │  │
-│  └─────────────┘  │  └─────────┘ └─────────┘ └─────────┘ └─────────┘    │  │
-│                   │  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐    │  │
-│                   │  │refunds │ │ users  │ │recommen │ │knowledge│    │  │
-│                   │  │.csv    │ │.csv    │ │dations  │ │.csv    │    │  │
-│                   │  └─────────┘ └─────────┘ └─────────┘ └─────────┘    │  │
-│                   └─────────────────────────────────────────────────────┘  │
+│                           🧠 AI Engine Layer                                  │
+│                                                                               │
+│  ┌─────────────────────────────────────────────────────────────────────┐      │
+│  │                      🤖 DeepSeek V3 LLM                              │      │
+│  │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐               │      │
+│  │  │ Deep learning │  │ Machine learn │  │ NLP          │               │      │
+│  │  │ semantics    │  │ intent class  │  │ context      │               │      │
+│  │  │ reasoning    │  │ entity recog  │  │ sentiment    │               │      │
+│  │  │ generation   │  │ clustering    │  │ summarization│               │      │
+│  │  └──────────────┘  └──────────────┘  └──────────────┘               │      │
+│  └─────────────────────────────────────────────────────────────────────┘      │
+│                                     │                                          │
+│  ┌─────────────┐  ┌─────────────────────────────────────────────────────┐      │
+│  │  🔍 FAISS    │  │                    📦 Data Layer                    │      │
+│  │  vector     │  │  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐    │      │
+│  │  search     │  │  │orders  │ │products │ │logistics│ │coupons  │    │      │
+│  │  ms matching│  │  │.csv    │ │.csv     │ │.csv     │ │.csv     │    │      │
+│  └─────────────┘  │  └─────────┘ └─────────┘ └─────────┘ └─────────┘    │      │
+│                   │  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐    │      │
+│                   │  │refunds  │ │ users   │ │recommen │ │knowledge│    │      │
+│                   │  │.csv     │ │.csv     │ │dations  │ │.csv     │    │      │
+│                   │  └─────────┘ └─────────┘ └─────────┘ └─────────┘    │      │
+│                   └─────────────────────────────────────────────────────┘      │
 └───────────────────────────────────────────────────────────────────────────┘
                                      │
                                      ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                           📊 12 大电商业务场景                               │
-│                                                                             │
-│  ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐          │
-│  │ 📦订单 │ │ 🚚物流 │ │ 🛍️商品 │ │ 🎫优惠 │ │ 👤用户 │ │ 🔄售后 │          │
-│  │  管理  │ │  追踪  │ │  推荐  │ │  查询  │ │  档案  │ │  退款  │          │
-│  └────────┘ └────────┘ └────────┘ └────────┘ └────────┘ └────────┘          │
-│  ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐          │
-│  │ 📺直播 │ │ 🛒购物 │ │ ⭐收藏 │ │ 📈营收 │ │ 📝评价 │ │ 🔍风控 │          │
-│  │  带货  │ │  车    │ │  夹    │ │  报表  │ │  分析  │ │  检测  │          │
-│  └────────┘ └────────┘ └────────┘ └────────┘ └────────┘ └────────┘          │
+│                           📊 12 E-commerce Business Scenarios                 │
+│                                                                               │
+│  ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐           │
+│  │ 📦Order │ │ 🚚Ship │ │ 🛍️Item │ │ 🎫Coup │ │ 👤User │ │ 🔄Refnd│           │
+│  │  mgmt  │ │  track │ │  recmd │ │  query │ │ profile│ │  return│           │
+│  └────────┘ └────────┘ └────────┘ └────────┘ └────────┘ └────────┘           │
+│  ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐           │
+│  │ 📺Live │ │ 🛒Cart │ │ ⭐Fav  │ │ 📈Rev   │ │ 📝Revw │ │ 🔍Risk │           │
+│  │  sales │ │        │ │  list  │ │  report│ │  review│ │  check │           │
+│  └────────┘ └────────┘ └────────┘ └────────┘ └────────┘ └────────┘           │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## ⚡ 二、性能优化架构
+## ⚡ 2. Performance Optimization Architecture
 
-### 2.1 多级缓存架构
+### 2.1 Multi-level Cache
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                      📊 缓存命中率: 95%+                         │
+│                      📊 Cache hit rate: 95%+                     │
 └─────────────────────────────────────────────────────────────────┘
 
-                    请求进来
+                    Incoming request
                         │
                         ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                    L1: 进程内缓存 (Memory)                      │
-│  ┌─────────────────────────────────────────────────────────┐   │
-│  │  Intent Cache    │ 相同意图 → 复用结果 → 0ms响应          │   │
-│  │  Knowledge Cache │ FAQ检索结果 → 缓存90秒                │   │
-│  │  LRU Eviction    │ 最近最少使用 → 自动淘汰                │   │
-│  └─────────────────────────────────────────────────────────┘   │
-│  命中率: 70%  │ 延迟: 0.1ms  │ 容量: 1000条                    │
+│                    L1: In-process cache (Memory)                 │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │  Intent Cache    │ same intent → reuse result → 0ms    │    │
+│  │  Knowledge Cache │ FAQ results → cached 90s            │    │
+│  │  LRU Eviction    │ least-recently-used → auto evict    │    │
+│  └─────────────────────────────────────────────────────────┘    │
+│  Hit rate: 70%  │ Latency: 0.1ms  │ Capacity: 1000 entries      │
 └────────────────────────────┬───────────────────────────────────┘
-                             │ 未命中
+                             │ miss
                              ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                    L2: 进程级缓存 (Redis风格)                    │
-│  ┌─────────────────────────────────────────────────────────┐   │
-│  │  Order Cache     │ 订单数据 → 缓存5分钟                │   │
-│  │  Product Cache   │ 商品信息 → 缓存10分钟               │   │
-│  │  Logistics Cache │ 物流信息 → 缓存2分钟                 │   │
-│  │  Coupon Cache    │ 优惠券数据 → 缓存30分钟              │   │
-│  └─────────────────────────────────────────────────────────┘   │
-│  命中率: 20%  │ 延迟: 1ms  │ 容量: 10000条                    │
+│                    L2: Process-level cache (Redis-style)         │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │  Order Cache     │ order data → cached 5 min            │    │
+│  │  Product Cache   │ product info → cached 10 min         │    │
+│  │  Logistics Cache │ shipping info → cached 2 min         │    │
+│  │  Coupon Cache    │ coupon data → cached 30 min          │    │
+│  └─────────────────────────────────────────────────────────┘    │
+│  Hit rate: 20%  │ Latency: 1ms  │ Capacity: 10000 entries       │
 └────────────────────────────┬───────────────────────────────────┘
-                             │ 未命中
+                             │ miss
                              ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                    L3: CSV数据源 (持久化)                        │
-│  ┌─────────────────────────────────────────────────────────┐   │
-│  │  orders.csv      │ 10+订单记录                         │   │
-│  │  products.csv    │ 10+商品信息                         │   │
-│  │  logistics.csv   │ 6+物流追踪                          │   │
-│  │  coupons.csv     │ 7+优惠券                            │   │
-│  └─────────────────────────────────────────────────────────┘   │
-│  读取延迟: 10ms  │ 自动Reload: 每5分钟                        │
+│                    L3: CSV data source (persistent)             │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │  orders.csv      │ 10+ order records                    │    │
+│  │  products.csv    │ 10+ product entries                  │    │
+│  │  logistics.csv   │ 6+ tracking records                  │    │
+│  │  coupons.csv     │ 7+ coupons                           │    │
+│  └─────────────────────────────────────────────────────────┘    │
+│  Read latency: 10ms  │ Auto-reload: every 5 min                  │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-### 2.2 异步并行处理架构
+### 2.2 Async Parallel Processing
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                     ⚡ 异步并行处理流程                          │
+│                     ⚡ Async Parallel Flow                       │
 └─────────────────────────────────────────────────────────────────┘
 
-                    用户请求: 查订单DD20260501001
+                    User request: query order DD20260501001
                                    │
                     ┌──────────────┴──────────────┐
                     ▼                              ▼
           ┌─────────────────┐          ┌─────────────────┐
-          │   🔍 意图识别    │          │   ⚡ 预加载缓存  │
-          │   (async)       │          │   (后台执行)     │
-          │   耗时: 5ms     │          │   耗时: 2ms     │
+          │   🔍 Intent      │          │   ⚡ Preload    │
+          │   recognition    │          │   cache        │
+          │   (async)        │          │   (background) │
+          │   cost: 5ms      │          │   cost: 2ms    │
           └────────┬────────┘          └────────┬────────┘
                    │                            │
                    └──────────┬─────────────────┘
                               ▼
               ┌───────────────────────────────────┐
-              │         🚀 并行查询 (asyncio.gather) │
+              │      🚀 Parallel query (asyncio.gather) │
               ├─────────────────┬─────────────────┤
               ▼                 ▼                 ▼
     ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-    │  订单查询    │    │  物流查询    │    │  商品查询   │
-    │  orders.csv │    │logistics.csv│    │products.csv│
-    │  耗时: 10ms │    │  耗时: 8ms  │    │  耗时: 6ms  │
+    │ Order query │    │Shipping query│    │Product query│
+    │  orders.csv │    │logistics.csv│    │products.csv │
+    │  cost: 10ms │    │  cost: 8ms  │    │  cost: 6ms  │
     └──────┬──────┘    └──────┬──────┘    └──────┬──────┘
            │                  │                  │
            └──────────────────┼──────────────────┘
                              ▼
               ┌───────────────────────────────────┐
-              │         📊 数据聚合 (Aggregation)  │
-              │         合并结果 + 去重 + 排序     │
-              │              耗时: 3ms            │
+              │         📊 Data aggregation        │
+              │     merge + dedupe + sort         │
+              │          cost: 3ms                │
               └──────────────────┬────────────────┘
                                  │
                                  ▼
               ┌───────────────────────────────────┐
-              │         🎨 报告生成 (DeepSeek)    │
-              │         组装格式 + 个性化建议      │
-              │              耗时: 100ms           │
+              │       🎨 Report generation        │
+              │      (DeepSeek)                   │
+              │  format + personalized advice     │
+              │          cost: 100ms              │
               └──────────────────┬────────────────┘
                                  │
                                  ▼
-                            用户收到完整报告
-                            总耗时: ~120ms (vs 2分钟人工)
+                        User receives full report
+                        Total: ~120ms (vs 2 min human)
 
     ┌─────────────────────────────────────────────────────────┐
-    │  📊 性能对比                                             │
-    │  串行处理: 5+10+8+6+3+100 = 132ms                      │
-    │  并行处理: 5+max(10,8,6)+3+100 = 118ms                 │
-    │  提升效率: 11%                                          │
-    │  🚀 加上缓存命中，实际响应: <50ms                        │
+    │  📊 Performance comparison                               │
+    │  Serial: 5+10+8+6+3+100 = 132ms                         │
+    │  Parallel: 5+max(10,8,6)+3+100 = 118ms                  │
+    │  Improvement: 11%                                        │
+    │  🚀 With cache hits, actual response: <50ms              │
     └─────────────────────────────────────────────────────────┘
 ```
 
-### 2.3 Token消耗优化架构
+### 2.3 Token Optimization
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                  💰 Token 消耗优化架构 (节省40%+)               │
+│               💰 Token optimization (40%+ savings)               │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
-│  策略1: 历史压缩 (节省50% Token)                                 │
-│  ┌─────────────────────────────────────────────────────────┐   │
-│  │  对话历史: [用户1,小e1,用户2,小e2,用户3,小e3...]        │   │
-│  │       ↓ 智能裁剪 (保留最近3轮)                          │   │
-│  │  压缩后: [用户2,小e2,用户3,小e3...]                     │   │
-│  │  Token: 500 → 200 (节省60%)                            │   │
-│  └─────────────────────────────────────────────────────────┘   │
-│                                                                  │
-│  策略2: 意图缓存 (节省90% Token)                                 │
-│  ┌─────────────────────────────────────────────────────────┐   │
-│  │  首次查询: "查订单DD001" → 意图识别 → 缓存意图           │   │
-│  │  二次查询: "DD001" → 直接命中缓存 → 跳过意图识别         │   │
-│  │  Token: 300 → 30 (节省90%)                              │   │
-│  └─────────────────────────────────────────────────────────┘   │
-│                                                                  │
-│  策略3: 提示词精简 (节省40% Token)                                │
-│  ┌─────────────────────────────────────────────────────────┐   │
-│  │  精简前: 你是一个电商客服，你需要回答用户问题...         │   │
-│  │  精简后: 电商客服，回答用户问题                           │   │
-│  │  Token: 200 → 120 (节省40%)                             │   │
-│  └─────────────────────────────────────────────────────────┘   │
-│                                                                  │
-│  策略4: 知识库缓存 (节省35% Token)                                │
-│  ┌─────────────────────────────────────────────────────────┐   │
-│  │  FAQ向量检索 → 结果缓存 → 相同问题直接返回              │   │
-│  │  Token: 150 → 100 (节省35%)                            │   │
-│  └─────────────────────────────────────────────────────────┘   │
-└─────────────────────────────────────────────────────────────────┘
-```
-
----
-
-## 🧠 三、机器学习技术架构
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    🧠 机器学习技术架构                           │
-└─────────────────────────────────────────────────────────────────┘
-
-┌─────────────────────────────────────────────────────────────────┐
-│  1️⃣ 意图分类 (Intent Classification)                            │
-│  ┌─────────────────────────────────────────────────────────┐   │
-│  │  输入: "我的订单什么时候发货"                             │   │
-│  │       ↓                                                   │   │
-│  │  模型: BERT/RoBERTa 微调分类器                           │   │
-│  │       ↓                                                   │   │
-│  │  输出: {intent: "order_shipping", confidence: 0.96}       │   │
-│  │                                                              │   │
-│  │  准确率: 95%+  │ 延迟: 5ms  │ 支持: 20+意图类型           │   │
-│  └─────────────────────────────────────────────────────────┘   │
-│                                                                  │
-│  2️⃣ 实体识别 (Entity Extraction)                                │
-│  ┌─────────────────────────────────────────────────────────┐   │
-│  │  输入: "查一下DD20260501001这个订单"                      │   │
-│  │       ↓                                                   │   │
-│  │  模型: BiLSTM-CRF / BERT-NER                             │   │
-│  │       ↓                                                   │   │
-│  │  输出: {order_id: "DD20260501001", type: "订单号"}        │   │
-│  │                                                              │   │
-│  │  精准率: 98%+  │ 延迟: 3ms  │ 支持: 订单号/商品/手机     │   │
-│  └─────────────────────────────────────────────────────────┘   │
-│                                                                  │
-│  3️⃣ 情感分析 (Sentiment Analysis)                               │
-│  ┌─────────────────────────────────────────────────────────┐   │
-│  │  输入: "等了好几天还没收到，差评！"                       │   │
-│  │       ↓                                                   │   │
-│  │  模型: TextCNN / BERT情感分类器                           │   │
-│  │       ↓                                                   │   │
-│  │  输出: {sentiment: "negative", score: 0.87}              │   │
-│  │                                                              │   │
-│  │  应用: 差评预警 │ 自动安抚 │ 优先级排序                   │   │
-│  └─────────────────────────────────────────────────────────┘   │
-│                                                                  │
-│  4️⃣ 向量检索 (Vector Search)                                    │
-│  ┌─────────────────────────────────────────────────────────┐   │
-│  │  输入: "衣服质量怎么样"                                   │   │
-│  │       ↓                                                   │   │
-│  │  模型: Sentence-BERT embedding                            │   │
-│  │       ↓                                                   │   │
-│  │  引擎: FAISS 向量数据库                                   │   │
-│  │       ↓                                                   │   │
-│  │  输出: Top-5 相关FAQ [score: 0.89, 0.85, 0.82...]        │   │
-│  │                                                              │   │
-│  │  召回率: 95%+  │ 延迟: 10ms  │ 百万级向量秒级检索          │   │
-│  └─────────────────────────────────────────────────────────┘   │
-│                                                                  │
-│  5️⃣ 上下文理解 (Context Understanding)                          │
-│  ┌─────────────────────────────────────────────────────────┐   │
-│  │  对话历史: [用户: 推荐商品, 小e: 连衣裙..., 用户: 那这款]  │   │
-│  │       ↓                                                   │   │
-│  │  模型: 注意力机制 + 上下文向量                             │   │
-│  │       ↓                                                   │   │
-│  │  输出: 理解"那这款"指的是刚才推荐的连衣裙                  │   │
-│  │                                                              │   │
-│  │  多轮准确率: 92%+  │ 支持: 10+轮对话                      │   │
-│  └─────────────────────────────────────────────────────────┘   │
+│  Strategy 1: History compression (50% token savings)            │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │  History: [user1, bot1, user2, bot2, user3, bot3...]    │    │
+│  │       ↓ smart trim (keep last 3 turns)                 │    │
+│  │  Compressed: [user2, bot2, user3, bot3...]              │    │
+│  │  Tokens: 500 → 200 (60% saved)                         │    │
+│  └─────────────────────────────────────────────────────────┘    │
+│                                                                   │
+│  Strategy 2: Intent cache (90% token savings)                    │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │  First: "query order DD001" → intent → cache intent     │    │
+│  │  Next:  "DD001" → cache hit → skip intent recognition   │    │
+│  │  Tokens: 300 → 30 (90% saved)                           │    │
+│  └─────────────────────────────────────────────────────────┘    │
+│                                                                   │
+│  Strategy 3: Prompt slimming (40% token savings)                 │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │  Before: You are an e-commerce support agent...         │    │
+│  │  After:  E-commerce support, answer user questions       │    │
+│  │  Tokens: 200 → 120 (40% saved)                          │    │
+│  └─────────────────────────────────────────────────────────┘    │
+│                                                                   │
+│  Strategy 4: Knowledge cache (35% token savings)                 │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │  FAQ vector search → cache → same question returns      │    │
+│  │  Tokens: 150 → 100 (35% saved)                          │    │
+│  └─────────────────────────────────────────────────────────┘    │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 📋 四、数据模型架构
+## 🧠 3. Machine Learning Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                     📊 CSV 数据模型架构                          │
+│                    🧠 ML Architecture                            │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│  1️⃣ Intent classification                                       │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │  Input: "When will my order ship?"                      │    │
+│  │       ↓                                                 │    │
+│  │  Model: BERT/RoBERTa fine-tuned classifier              │    │
+│  │       ↓                                                 │    │
+│  │  Output: {intent: "order_shipping", confidence: 0.96}   │    │
+│  │  Accuracy: 95%+ │ Latency: 5ms │ 20+ intent types      │    │
+│  └─────────────────────────────────────────────────────────┘    │
+│                                                                   │
+│  2️⃣ Entity extraction                                           │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │  Input: "Look up order DD20260501001"                   │    │
+│  │       ↓                                                 │    │
+│  │  Model: BiLSTM-CRF / BERT-NER                           │    │
+│  │       ↓                                                 │    │
+│  │  Output: {order_id: "DD20260501001", type: "order_no"}  │    │
+│  │  Precision: 98%+ │ Latency: 3ms │ order/product/phone   │    │
+│  └─────────────────────────────────────────────────────────┘    │
+│                                                                   │
+│  3️⃣ Sentiment analysis                                          │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │  Input: "Waited days, still nothing — bad!"             │    │
+│  │       ↓                                                 │    │
+│  │  Model: TextCNN / BERT sentiment classifier             │    │
+│  │       ↓                                                 │    │
+│  │  Output: {sentiment: "negative", score: 0.87}           │    │
+│  │  Use: negative alerts │ auto-soothe │ priority ranking  │    │
+│  └─────────────────────────────────────────────────────────┘    │
+│                                                                   │
+│  4️⃣ Vector search                                               │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │  Input: "How's the quality of this shirt?"              │    │
+│  │       ↓                                                 │    │
+│  │  Model: Sentence-BERT embedding                         │    │
+│  │       ↓                                                 │    │
+│  │  Engine: FAISS vector store                             │    │
+│  │       ↓                                                 │    │
+│  │  Output: Top-5 FAQs [score: 0.89, 0.85, 0.82...]        │    │
+│  │  Recall: 95%+ │ Latency: 10ms │ million-scale search    │    │
+│  └─────────────────────────────────────────────────────────┘    │
+│                                                                   │
+│  5️⃣ Context understanding                                       │
+│  ┌─────────────────────────────────────────────────────────┐    │
+│  │  History: [user: recommend, bot: dress..., user: this]  │    │
+│  │       ↓                                                 │    │
+│  │  Model: attention + context vector                      │    │
+│  │       ↓                                                 │    │
+│  │  Output: understands "this" = the dress just suggested  │    │
+│  │  Multi-turn accuracy: 92%+ │ 10+ turn dialogues         │    │
+│  └─────────────────────────────────────────────────────────┘    │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📋 4. Data Model Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                     📊 CSV Data Model                            │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
 │   orders     │     │  products    │     │  logistics   │
-│   订单数据    │     │   商品数据    │     │   物流数据    │
 ├──────────────┤     ├──────────────┤     ├──────────────┤
-│ order_id PK  │────▶│product_id PK│◀────│ order_id FK  │
+│ order_id PK  │────▶│product_id PK │◀────│ order_id FK  │
 │ user_id FK   │     │ product_name │     │ tracking_no  │
 │ product_id FK│     │ category     │     │ company      │
 │ quantity     │     │ price        │     │ status       │
@@ -406,198 +400,197 @@ python mimo_demo.py
 
 ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
 │   coupons    │     │   refunds    │     │recommendations│
-│   优惠券数据   │     │   退款数据    │     │   推荐数据     │
 ├──────────────┤     ├──────────────┤     ├──────────────┤
-│ coupon_id PK │     │ refund_id PK │     │ product_id PK │
-│ coupon_name  │     │ order_id FK  │     │ category      │
-│ type         │     │ reason       │     │ product_name  │
-│ discount     │     │ amount       │     │ price         │
-│ min_amount   │     │ status       │     │ popularity    │
-│ start_date   │     │ created_at   │     │ tags[]        │
-│ end_date     │     └──────────────┘     │ reason        │
+│ coupon_id PK │     │ refund_id PK │     │ product_id PK│
+│ coupon_name  │     │ order_id FK  │     │ category     │
+│ type         │     │ reason       │     │ product_name │
+│ discount     │     │ amount       │     │ price        │
+│ min_amount   │     │ status       │     │ popularity   │
+│ start_date   │     │ created_at   │     │ tags[]       │
+│ end_date     │     └──────────────┘     │ reason       │
 └──────────────┘                           └──────────────┘
 ```
 
 ---
 
-## 🎨 五、智能报告展示
+## 🎨 5. Smart Report Showcase
 
-### 📋 场景一：订单查询 - 完整分析报告
+### 📋 Scenario 1: Order query — full analysis report
 
-**用户输入：** `查一下DD20260501001的订单`
+**User input:** `Look up order DD20260501001`
 
-**AI 智能回复：**
+**AI reply:**
 ```
 ═══════════════════════════════════════════════════════════════
-                    📋 订单分析报告
+                    📋 Order Analysis Report
 ═══════════════════════════════════════════════════════════════
 
-【基本信息】
-├ 订单编号: DD20260501001
-├ 商品名称: 夏季新款碎花连衣裙
-├ 购买数量: 2件
-├ 订单金额: ￥258.0
-├ 订单状态: ✅ 已支付，等待商家发货
-├ 购买平台: 淘宝
-└ 下单时间: 2026-05-01 10:30:00
+[Basic info]
+├ Order no: DD20260501001
+├ Product: Summer floral dress
+├ Quantity: 2
+├ Amount: ¥258.0
+├ Status: ✅ Paid, awaiting shipment
+├ Platform: Taobao
+└ Order time: 2026-05-01 10:30:00
 
-【收货信息】
-├ 收件人: 张三
-└ 收货地址: 北京市朝阳区建国路88号
+[Shipping info]
+├ Recipient: Zhang San
+└ Address: 88 Jianguo Road, Chaoyang, Beijing
 
-【物流分析】
-├ 快递公司: 顺丰速运
-├ 运单号: SF1234567890
-├ 当前状态: 已发货
-├ 实时位置: 北京分拨中心
-└ 预计送达: 2026-05-03
+[Logistics]
+├ Carrier: SF Express
+├ Tracking no: SF1234567890
+├ Status: Shipped
+├ Location: Beijing distribution center
+└ ETA: 2026-05-03
 
-【同类商品推荐】
-├ 🌸 夏季新款碎花连衣裙 - ￥129.0
-│   热销950件，好评如潮
-├ 👗 韩版宽松牛仔裤 - ￥159.0
-│   网红同款，热销750件
+[Similar recommendations]
+├ 🌸 Summer floral dress - ¥129.0
+│   950 sold, highly rated
+├ 👗 Korean loose jeans - ¥159.0
+│   Trendy, 750 sold
 
-【当前可用优惠】
-├ 🎫 新人专享券: 满100减20元
-├ 🎫 夏装专场8折: 满200享8折
-└ 🎫 限时抢购券: 满300减50
-
-═══════════════════════════════════════════════════════════════
-【小e智能建议】
-✅ 您的订单已支付成功，商家会在24小时内安排发货哦~
-💡 温馨提示：如有急需发货的商品，建议您联系商家说明情况~
-═══════════════════════════════════════════════════════════════
-```
-
----
-
-### 🛍️ 场景二：商品推荐 - 智能选购报告
-
-**用户输入：** `帮我推荐一些商品`
-
-**AI 智能回复：**
-```
-═══════════════════════════════════════════════════════════════
-               ⭐ 智能推荐报告
-═══════════════════════════════════════════════════════════════
-
-小e根据您的购物偏好，为您精心挑选了以下商品：
-
-【👗 连衣裙专区】
-├ 夏季新款碎花连衣裙 - ￥129.0
-│   清新碎花设计，适合约会出游，面料轻薄透气
-│   标签: 碎花 | 夏季 | 约会
-│   热度: 950人已购 | 好评如潮
-
-【👟 鞋类专区】
-├ 运动休闲鞋 黑色 42码 - ￥299.0
-│   时尚休闲设计，缓震鞋底，舒适透气
-│   标签: 运动 | 休闲 | 时尚
-│   热度: 920人已购 | 好评如潮
-
-【👕 T恤专区】
-├ 男士纯棉T恤 白色 XL - ￥89.0
-│   100%纯棉面料，柔软舒适，简约百搭款
-│   标签: 纯棉 | 百搭 | 透气
-│   热度: 880人已购 | 店铺爆款
+[Available coupons]
+├ 🎫 New-user coupon: ¥20 off ¥100
+├ 🎫 Summer sale 20% off: 20% off ¥200
+└ 🎫 Flash coupon: ¥50 off ¥300
 
 ═══════════════════════════════════════════════════════════════
-【小e推荐亮点】
-🔥 本周爆款: 夏季新款碎花连衣裙
-💎 高性价比: 男士纯棉T恤 白色 XL (仅￥89.0)
-👑 品质之选: 运动休闲鞋 黑色 42码
-
-【搭配推荐】
-👗 + 👟 购买连衣裙+运动鞋，立享夏装8折优惠~
+[Smart suggestions]
+✅ Your order is paid — the merchant will ship within 24 hours.
+💡 Tip: if you need it urgently, contact the merchant directly.
 ═══════════════════════════════════════════════════════════════
 ```
 
 ---
 
-### 📚 场景三：通用问答 - 百科式智能回答
+### 🛍️ Scenario 2: Product recommendations — smart shopping report
 
-**用户输入：** `夏天吃什么好`
+**User input:** `Recommend some products`
 
-**AI 智能回复：**
+**AI reply:**
 ```
-您好，我是小e！关于夏天饮食建议：
+═══════════════════════════════════════════════════════════════
+               ⭐ Smart Recommendation Report
+═══════════════════════════════════════════════════════════════
 
-🌡️ 【夏天饮食原则】
-1. 【清淡解暑】多吃西瓜、黄瓜、绿豆汤、苦瓜等
-2. 【补充水分】每天饮水1500-2000ml
-3. 【健脾祛湿】推荐薏米、红豆、山药、冬瓜
+Based on your shopping preferences, here are curated picks:
 
-🍉 【推荐食物】
-• 西瓜：解暑利尿，每天200-300g
-• 绿豆汤：清热解毒
-• 苦瓜：清心火
+[👗 Dresses]
+├ Summer floral dress - ¥129.0
+│   Fresh floral design, light and breathable
+│   Tags: floral | summer | date-night
+│   Popularity: 950 sold | highly rated
 
-💡 小e建议：天气炎热记得防暑降温哦~
+[👟 Shoes]
+├ Casual sneakers, black, size 42 - ¥299.0
+│   Stylish, cushioned sole, breathable
+│   Tags: sport | casual | fashion
+│   Popularity: 920 sold | highly rated
+
+[👕 T-shirts]
+├ Men's cotton tee, white, XL - ¥89.0
+│   100% cotton, soft and versatile
+│   Tags: cotton | versatile | breathable
+│   Popularity: 880 sold | bestseller
+
+═══════════════════════════════════════════════════════════════
+[Highlights]
+🔥 Bestseller this week: Summer floral dress
+💎 Best value: Men's cotton tee XL (only ¥89.0)
+👑 Premium pick: Casual sneakers black 42
+
+[Outfit suggestion]
+👗 + 👟 Buy the dress + sneakers for the summer 20% off deal.
+═══════════════════════════════════════════════════════════════
 ```
 
 ---
 
-## 📁 六、项目结构
+### 📚 Scenario 3: General Q&A — encyclopedia-style answer
+
+**User input:** `What should I eat in summer?`
+
+**AI reply:**
+```
+Hi, I'm your assistant! Summer diet tips:
+
+🌡️ [Principles]
+1. [Cooling foods] watermelon, cucumber, mung bean soup, bitter melon
+2. [Hydration] drink 1500-2000 ml of water daily
+3. [Reduce dampness] barley, red beans, yam, winter melon
+
+🍉 [Recommended foods]
+• Watermelon: cooling and diuretic, 200-300 g per day
+• Mung bean soup: clears heat and detoxifies
+• Bitter melon: clears internal heat
+
+💡 Tip: stay cool and avoid heatstroke in hot weather.
+```
+
+---
+
+## 📁 6. Project Structure
 
 ```
 ecommerce-customer-service-agent/
 ├── app/
-│   ├── agents/                    # 多Agent协作层
-│   │   ├── intent_agent.py       # 意图识别Agent
-│   │   ├── knowledge_agent.py    # 知识库检索Agent
-│   │   └── dialogue_agent.py     # 对话生成Agent
-│   ├── services/                 # 核心服务层
-│   │   ├── data_service.py       # CSV数据服务
-│   │   ├── llm_service.py        # DeepSeek LLM服务
-│   │   └── vector_service.py     # FAISS向量服务
-│   └── main.py                   # 主入口
-├── data/                         # CSV数据层
-│   ├── orders.csv               # 订单数据
-│   ├── products.csv             # 商品数据
-│   ├── logistics.csv            # 物流数据
-│   └── coupons.csv             # 优惠券数据
-└── README.md                   # 文档
+│   ├── agents/                    # multi-agent collaboration layer
+│   │   ├── intent_agent.py       # intent recognition agent
+│   │   ├── knowledge_agent.py    # knowledge-base retrieval agent
+│   │   └── dialogue_agent.py     # response generation agent
+│   ├── services/                 # core service layer
+│   │   ├── data_service.py       # CSV data service
+│   │   ├── llm_service.py        # DeepSeek LLM service
+│   │   └── vector_service.py     # FAISS vector service
+│   └── main.py                   # entry point
+├── data/                         # CSV data layer
+│   ├── orders.csv               # order data
+│   ├── products.csv             # product data
+│   ├── logistics.csv            # logistics data
+│   └── coupons.csv              # coupon data
+└── README.md                    # documentation
 ```
 
 ---
 
-## 🛠️ 快速开始
+## 🛠️ Quick Start
 
 ```bash
-# 1. 安装依赖
+# 1. Install dependencies
 pip install -r requirements.txt
 
-# 2. 配置 API Key (从 111.txt 读取)
-# API Key保存在外部文件，不会泄露到代码
+# 2. Configure the API key (read from 111.txt)
+# The key is stored externally, never committed to code
 
-# 3. 启动服务
+# 3. Start the service
 python -m app.main
 
-# 4. 访问
-# 前端: http://localhost:8000/static/index.html
-# API: http://localhost:8000/docs
+# 4. Access
+# Frontend: http://localhost:8000/static/index.html
+# API docs: http://localhost:8000/docs
 ```
 
 ---
 
-## 📊 技术栈
+## 📊 Tech Stack
 
-| 技术 | 用途 |
-|------|------|
-| Python 3.8+ | 编程语言 |
-| FastAPI | Web 框架 |
-| DeepSeek V3 | 大模型 + 深度学习 |
-| BERT/RoBERTa | 意图分类 + 实体识别 |
-| FAISS | 向量检索引擎 |
-| BiLSTM-CRF | 命名实体识别 |
-| asyncio | 异步并发 |
-| CSV | 数据驱动 |
+| Technology | Purpose |
+|------------|---------|
+| Python 3.8+ | Language |
+| FastAPI | Web framework |
+| DeepSeek V3 | LLM + deep learning |
+| BERT/RoBERTa | Intent classification + entity recognition |
+| FAISS | Vector search engine |
+| BiLSTM-CRF | Named entity recognition |
+| asyncio | Async concurrency |
+| CSV | Data-driven storage |
 
 ---
 
 <div align="center">
 
-**🎉 让每一次咨询都充满智能与温度 🎉**
+**🎉 Making every conversation smart and human 🎉**
 
 </div>
